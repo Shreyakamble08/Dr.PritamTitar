@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dr. Pritam Titar - Expert Medical Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#C70039',
+                        secondary: '#45B7B8',
+                        accent: '#96CEB4',
+                        dark: '#2C3E50',
+                        light: '#F8F9FA'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'heading': ['Nunito', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-sans">
+    <!-- Top Navbar -->
+    <div class="bg-[#141E46] text-white py-2 hidden md:block">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center text-sm">
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-[#FF6969]"></i>
+                        <a href="tel:+919876543210" class="hover:text-[#FF6969] transition-colors">
+                            +91 98765 43210
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-[#FF6969]"></i>
+                        <a href="mailto:dr.pritamtitar@email.com" class="hover:text-[#FF6969] transition-colors">
+                            dr.pritamtitar@email.com
+                        </a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://www.facebook.com/people/DrPritam-Titar-Cardiologist/100076239281917/?mibextid=ZbWKwL"
+                        target="_blank" class="text-white hover:text-[#FF6969] transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dr-pritam-titar-54199449/" target="_blank"
+                        class="text-white hover:text-[#FF6969] transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pritamtitar/?igshid=ZDdkNTZiNTM%3D" target="_blank"
+                        class="text-white hover:text-[#FF6969] transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="text-2xl font-heading font-bold text-[#141E46]">
+                        Dr. Pritam Titar
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
+                    <a href="services.html"
+                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
+                    <a href="contact.html"
+                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
+                    <a href="contact.html"
+                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium">
+                        Book Appointment
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-dark">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
+                    <a href="services.html"
+                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
+                    <a href="contact.html"
+                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
+                    <a href="contact.html"
+                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium text-center">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Banner -->
+    <section class="bg-gradient-to-r from-[#A0153E] via-[#C70039] to-[#FF6969] py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+                About Dr. Pritam Titar
+            </h1>
+            <p class="text-xl text-white opacity-90">
+                Dedicated to Excellence in Healthcare
+            </p>
+        </div>
+    </section>
+
+    <!-- Hero About Section -->
+    <section class="py-12 bg-gradient-to-r from-[#FAEDF0] to-[#F6E1E1]">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <span class="text-primary font-heading text-sm tracking-wider mb-2">MEET YOUR DOCTOR</span>
+                    <h1 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-4 leading-snug">
+                        Dr. Pritam R. Titar, MD<br>
+                        <span class="text-primary">Cardiologist & Internist</span>
+                    </h1>
+                    <p class="text-sm text-gray-700 mb-4 leading-relaxed">
+                        Dr. Pritam R. Titar, M.B.B.S., M.D. (Medicine), DrNB (Cardiology), is an experienced
+                        interventional and consultant cardiologist based in Pune. He completed his medical education at
+                        B.J. Medical College, Pune, followed by an M.D. in Medicine from Topiwala National Medical
+                        College & BYL Nair Hospital, Mumbai.
+                    </p>
+                    <p class="text-sm text-gray-700 mb-6 leading-relaxed">
+                        His interventional specialties include coronary and peripheral angioplasty, pacemaker
+                        implantation, device closures (ASD, VSD, PDA), balloon mitral valvotomy, and advanced techniques
+                        like rotablation, CTO, and IVUS/OCT.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="/contact.html"
+                            class="bg-primary text-white px-6 py-2 text-sm rounded-full font-semibold hover:bg-[#141E46] transition-all">
+                            Book Consultation
+                        </a>
+                        <a href="#qualifications"
+                            class="border border-primary text-primary px-6 py-2 text-sm rounded-full font-semibold hover:bg-primary hover:text-white transition-all">
+                            View Credentials
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 relative">
+                    <img src="/Images/doctor.png" alt="Dr. Pritam R. Titar"
+                        class="rounded-lg shadow-lg w-full max-w-sm mx-auto border border-gray-300">
+                    <div
+                        class="absolute -bottom-4 -left-4 bg-white p-3 rounded-lg shadow-sm hidden md:block  border-2 border-gray-200">
+                        <div class="text-center">
+                            <span class="text-2xl font-heading font-bold text-primary">15+</span>
+                            <p class="text-xs text-gray-600">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Qualifications Section -->
+    <section id="qualifications" class="py-20 bg-[#f9f9f9]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-4">Education & Experience</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">My journey through medical education and professional
+                    practice</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Education Timeline -->
+                <div class="relative">
+                    <div class="bg-white p-8 rounded-xl shadow-md relative z-10">
+                        <h3 class="text-2xl font-heading font-bold text-dark mb-6 pb-4 border-b border-gray-200 flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-primary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            Education & Training
+                        </h3>
+                        <div class="space-y-6">
+                            <!-- DrNB Cardiology -->
+                            <div class="flex items-start">
+                                <div class="w-4 h-4 bg-primary rounded-full mt-1 mr-4 flex-shrink-0"></div>
+                                <div>
+                                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+                                        <h4 class="font-heading font-bold text-dark">DrNB Cardiology</h4>
+                                        <span class="text-sm text-primary font-medium">2020</span>
+                                    </div>
+                                    <p class="text-gray-600">National Board of Examinations, New Delhi</p>
+                                    <ul class="mt-2 space-y-1 text-sm text-gray-500 pl-2">
+                                        <li class="flex items-start">
+                                            <span class="mr-1">•</span>
+                                            <span>Completed in first attempt with distinction</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="mr-1">•</span>
+                                            <span>Specialized training in interventional procedures</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- MD Medicine -->
+                            <div class="flex items-start">
+                                <div class="w-4 h-4 bg-primary rounded-full mt-1 mr-4 flex-shrink-0"></div>
+                                <div>
+                                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+                                        <h4 class="font-bold font-heading text-dark">MD (General Medicine)</h4>
+                                        <span class="text-sm text-primary font-medium">2015</span>
+                                    </div>
+                                    <p class="text-gray-600">Topiwala National Medical College & BYL Nair Hospital,
+                                        Mumbai</p>
+                                    <ul class="mt-2 space-y-1 text-sm text-gray-500 pl-2">
+                                        <li class="flex items-start">
+                                            <span class="mr-1">•</span>
+                                            <span>Gold medalist in Clinical Medicine</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="mr-1">•</span>
+                                            <span>Thesis on "Advanced Heart Failure Management"</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- MBBS -->
+                            <div class="flex items-start">
+                                <div class="w-4 h-4 bg-primary rounded-full mt-1 mr-4 flex-shrink-0"></div>
+                                <div>
+                                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+                                        <h4 class="font-bold font-heading text-dark">MBBS</h4>
+                                        <span class="text-sm text-primary font-medium">2010</span>
+                                    </div>
+                                    <p class="text-gray-600">B.J. Medical College & Sassoon General Hospital, Pune</p>
+                                    <ul class="mt-2 space-y-1 text-sm text-gray-500 pl-2">
+                                        <li class="flex items-start">
+                                            <span class="mr-1">•</span>
+                                            <span>University rank holder in Pathology</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="mr-1">•</span>
+                                            <span>Best Outgoing Student Award</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-primary rounded-xl opacity-10 -rotate-1"></div>
+                </div>
+
+                <!-- Experience Timeline -->
+                <div class="relative">
+                    <div class="bg-white p-8 rounded-xl shadow-md relative z-10">
+                        <h3 class="text-2xl font-bold font-heading text-dark mb-6 pb-4 border-b border-gray-200 flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-primary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Experience
+                        </h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-4 h-4 bg-primary rounded-full mt-1 mr-4"></div>
+                                <div>
+                                    <h4 class="font-bold font-heading text-dark">Director & Head of Cardiology</h4>
+                                    <p class="text-gray-600">Prohealth Panacea, Pune</p>
+                                    <p class="text-sm text-gray-500 mt-1">Current Position</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-4 h-4 bg-primary rounded-full mt-1 mr-4"></div>
+                                <div>
+                                    <h4 class="font-bold font-heading text-dark">Visiting Consultant Cardiologist</h4>
+                                    <p class="text-gray-600">Multiple hospitals in Pune region</p>
+                                    <p class="text-sm text-gray-500 mt-1">Current</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-4 h-4 bg-primary rounded-full mt-1 mr-4"></div>
+                                <div>
+                                    <h4 class="font-bold font-heading text-dark">Assistant Professor in Medicine</h4>
+                                    <p class="text-gray-600">Topiwala National Medical College & Nair Hospital, Mumbai
+                                    </p>
+                                    <p class="text-sm text-gray-500 mt-1">2015-2017</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-4 h-4 bg-primary rounded-full mt-1 mr-4"></div>
+                                <div>
+                                    <h4 class="font-bold font-heading text-dark">Senior Resident in Cardiology</h4>
+                                    <p class="text-gray-600">Poona Hospital & BJMC/Sassoon Hospital, Pune</p>
+                                    <p class="text-sm text-gray-500 mt-1">2017-2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-primary rounded-xl opacity-10 rotate-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Specializations Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold  font-heading text-dark mb-4">Clinical Specializations</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Areas of focused expertise and advanced training</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <!-- Card Template Start -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all hover:shadow-xl hover:-translate-y-2">
+                <div class="h-2 bg-primary"></div>
+                <div class="p-4">
+                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold font-heading text-dark mb-3">Interventional Cardiology</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Coronary angioplasty and stenting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Primary PCI for heart attacks</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Peripheral vascular interventions</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Clinical Cardiology -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all hover:shadow-xl hover:-translate-y-2">
+                <div class="h-2 bg-primary"></div>
+                <div class="p-4">
+                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold font-heading text-dark mb-3">Clinical Cardiology</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Heart failure management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Arrhythmia evaluation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Valvular heart disease management</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Preventive Cardiology -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all hover:shadow-xl hover:-translate-y-2">
+                <div class="h-2 bg-primary"></div>
+                <div class="p-4">
+                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold  font-heading text-dark mb-3">Preventive Cardiology</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Cardiac risk assessment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Lipid management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Hypertension control</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Awards Section -->
+    <section class="py-20 bg-gradient-to-br from-[#FAEDF0] to-[#F6E1E1]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark mb-4">Professional Highlights</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Key achievements and recognitions</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- Highlight 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-all hover:shadow-lg">
+                    <div
+                        class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold font-heading text-dark mb-2">DrNB Cardiology</h3>
+                    <p class="text-gray-600 text-sm">Completed in first attempt</p>
+                    <p class="text-primary text-sm font-medium mt-2">2020</p>
+                </div>
+
+                <!-- Highlight 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-all hover:shadow-lg">
+                    <div
+                        class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold font-heading text-dark mb-2">Academic Excellence</h3>
+                    <p class="text-gray-600 text-sm">Topiwala National Medical College</p>
+                    <p class="text-primary text-sm font-medium mt-2">2015</p>
+                </div>
+
+                <!-- Highlight 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-all hover:shadow-lg">
+                    <div
+                        class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold font-heading text-dark mb-2">Teaching Experience</h3>
+                    <p class="text-gray-600 text-sm">Assistant Professor in Medicine</p>
+                    <p class="text-primary text-sm font-medium mt-2">2015-2017</p>
+                </div>
+
+                <!-- Highlight 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-all hover:shadow-lg">
+                    <div
+                        class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold font-heading text-dark mb-2">Leadership</h3>
+                    <p class="text-gray-600 text-sm">Head of Cardiology Department</p>
+                    <p class="text-primary text-sm font-medium mt-2">Current</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section (Compact) -->
+    <section class="py-10 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-semibold font-heading text-dark mb-4">My Medical Philosophy</h2>
+                <div class="relative">
+                    <svg class="w-10 h-10 mx-auto text-primary mb-4 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                    </svg>
+                    <blockquote class="text-lg md:text-xl text-gray-700 italic mb-4">
+                        "I believe in treating the whole person, not just the disease. My approach combines
+                        evidence-based cardiology with personalized care."
+                    </blockquote>
+                    <div class="w-16 h-0.5 bg-primary mx-auto"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="bg-gradient-to-r from-[#A0153E] via-[#C70039] to-[#FF6969] py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+                Expert Cardiac Care in Pune
+            </h2>
+            <p class="text-xl text-white opacity-90 mb-8">
+                Experience personalized healthcare with Dr. Pritam Titar
+            </p>
+            <a href="contact.html"
+                class="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors inline-block">
+                Book Appointment
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="bg-[#141E46]  text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-heading font-bold text-[#FF6969] mb-6">Dr. Pritam Titar</h3>
+                    <p class="text-gray-300 mb-6">
+                        Providing exceptional healthcare services with compassion, expertise, and dedication to patient
+                        well-being.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/people/DrPritam-Titar-Cardiologist/100076239281917/?mibextid=ZbWKwL"
+                            target="_blank" class="text-white hover:text-[#FF6969] transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dr-pritam-titar-54199449/" target="_blank"
+                            class="text-white hover:text-[#FF6969] transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pritamtitar/?igshid=ZDdkNTZiNTM%3D" target="_blank"
+                            class="text-white hover:text-[#FF6969] transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">Home</a>
+                        </li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">About</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Services</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a href="/services.html">
+                        <h4 class="text-lg font-semibold mb-6 hover:text-[#FF6969] transition">Services</h4>
+                    </a>
+                    <ul class="space-y-3">
+                        <li><a href="/services.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Angiography</a></li>
+                        <li><a href="/services.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Angioplasty</a></li>
+                        <li><a href="/services.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Cardiac
+                                Rehabilitation</a></li>
+                        <li><a href="/services.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">Heart
+                                Valve Surgery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-[#FF6969]"></i>
+                            <a href="tel:+919876543210" class="text-gray-300 hover:text-[#FF6969] transition-colors">
+                                +91 98765 43210
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-[#FF6969]"></i>
+                            <a href="mailto:dr.pritamtitar@email.com"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">
+                                dr.pritamtitar@email.com
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300">
+                    &copy; 2025 Dr. Pritam Titar. All rights reserved. Developed by
+                    <a href="https://github.com/Shreyakamble08" target="_blank" class="text-[#FF6969]  hover:underline">
+                        Shreya Kamble
+                    </a>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
