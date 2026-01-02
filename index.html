@@ -1,627 +1,1003 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Pritam Titar - Expert Medical Care</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#C70039',
-                        secondary: '#45B7B8',
-                        accent: '#96CEB4',
-                        dark: '#2C3E50',
-                        light: '#F8F9FA'
-                    },
-                    fontFamily: {
-                        'sans': ['Inter', 'system-ui', 'sans-serif'],
-                        'heading': ['Nunito', 'system-ui', 'sans-serif']
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#C70039",
+              secondary: "#45B7B8",
+              accent: "#96CEB4",
+              dark: "#2C3E50",
+              light: "#F8F9FA",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              heading: ["Nunito", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body class="font-sans">
+  <body class="font-sans">
     <!-- Top Navbar -->
     <div class="bg-[#141E46] text-white py-2 hidden md:block">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center text-sm">
-                <div class="flex items-center space-x-6">
-                    <div class="flex items-center space-x-2">
-                        <i class="fas fa-phone text-[#FF6969]"></i>
-                        <a href="tel:+919876543210" class="hover:text-[#FF6969] transition-colors">
-                            +91 98765 43210
-                        </a>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <i class="fas fa-envelope text-[#FF6969]"></i>
-                        <a href="mailto:dr.pritamtitar@email.com" class="hover:text-[#FF6969] transition-colors">
-                            dr.pritamtitar@email.com
-                        </a>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="https://www.facebook.com/people/DrPritam-Titar-Cardiologist/100076239281917/?mibextid=ZbWKwL"
-                        target="_blank" class="text-white hover:text-[#FF6969] transition-colors">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/dr-pritam-titar-54199449/" target="_blank"
-                        class="text-white hover:text-[#FF6969] transition-colors">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.instagram.com/pritamtitar/?igshid=ZDdkNTZiNTM%3D" target="_blank"
-                        class="text-white hover:text-[#FF6969] transition-colors">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center text-sm">
+          <div class="flex items-center space-x-6">
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-phone text-[#FF6969]"></i>
+              <a
+                href="tel:+917030108911"
+                class="hover:text-[#FF6969] transition-colors"
+              >
+                +91 70301 08911
+              </a>
             </div>
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-envelope text-[#FF6969]"></i>
+              <a
+                href="mailto:pritamtitar@gmail.com"
+                class="hover:text-[#FF6969] transition-colors"
+              >
+                pritamtitar@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <!-- WhatsApp Icon Only -->
+            <a
+              href="https://wa.me/917030108911"
+              target="_blank"
+              class="text-white hover:text-[#FF6969] transition-colors"
+            >
+              <i class="fab fa-whatsapp text-xl"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Main Navbar -->
     <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <div class="text-2xl font-heading font-bold text-[#141E46]">
-                        Dr. Pritam Titar
-                    </div>
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
-                    <a href="services.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
-                    <a href="contact.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
-                    <a href="contact.html"
-                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium">
-                        Book Appointment
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-dark">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <div class="text-2xl font-heading font-bold text-[#141E46]">
+              Dr. Pritam Titar
             </div>
+          </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden pb-4">
-                <div class="flex flex-col space-y-4">
-                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
-                    <a href="services.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
-                    <a href="contact.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
-                    <a href="contact.html"
-                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium text-center">
-                        Book Appointment
-                    </a>
-                </div>
-            </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >About</a
+            >
+            <a
+              href="services.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Services</a
+            >
+            <a
+              href="contact.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Contact</a
+            >
+            <a
+              href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar,%20I%20would%20like%20to%20book%20an%20appointment."
+              target="_blank"
+              class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-dark focus:outline-none"
+          >
+            <i id="menu-icon" class="fas fa-bars text-xl"></i>
+          </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden pb-4">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="index.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >About</a
+            >
+            <a
+              href="services.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Services</a
+            >
+            <a
+              href="contact.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Contact</a
+            >
+            <a
+              href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar,%20I%20would%20like%20to%20book%20an%20appointment."
+              target="_blank"
+              class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium text-center"
+            >
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Banner Section -->
     <section class="relative h-[88vh] overflow-hidden">
-        <div class="banner-slider relative h-full">
-            <!-- Banner 1 -->
-            <div class="banner-slide active absolute inset-0 bg-cover bg-center"
-                style="background-image: url('Images/banner1.png')">
-                <div class="container mx-auto px-4 h-full flex items-center">
-                    <div class="w-full"> <!-- Removed grid columns since we only need one column now -->
-                        <div class="text-white max-w-2xl"> <!-- Added max-width for better text containment -->
-                            <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">
-                                <span class="text-white-600">Stronger Hearts</span>,
-                                <span class="text-[#141E46]">Healthier Lives</span>
-                            </h1>
-                            <p class="text-xl mb-8 opacity-90">
-                                Providing comprehensive healthcare solutions with years of experience and dedication to
-                                patient care.
-                            </p>
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <a href="contact.html"
-                                    class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center">
-                                    Book Appointment
-                                </a>
-                                <a href="services.html"
-                                    class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors text-center">
-                                    Learn More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="banner-slider relative h-full">
+        <!-- Banner 1 -->
+        <div
+          class="banner-slide active absolute inset-0 bg-cover bg-center"
+          style="background-image: url('Images/banner1.png')"
+        >
+          <div class="container mx-auto px-4 h-full flex items-center">
+            <div class="w-full">
+              <!-- Removed grid columns since we only need one column now -->
+              <div class="text-white max-w-2xl">
+                <!-- Added max-width for better text containment -->
+                <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">
+                  <span class="text-white-600">Stronger Hearts</span>,
+                  <span class="text-[#141E46]">Healthier Lives</span>
+                </h1>
+                <p class="text-xl mb-8 opacity-90">
+                  Providing comprehensive healthcare solutions with years of
+                  experience and dedication to patient care.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                    target="_blank"
+                    class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center"
+                  >
+                    Book Appointment
+                  </a>
+                  <a
+                    href="services.html"
+                    class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors text-center"
+                  >
+                    Learn More
+                  </a>
                 </div>
+              </div>
             </div>
-            <!-- Banner 2 -->
-            <div
-                class="banner-slide absolute inset-0 bg-[radial-gradient(circle,_#FFB5B5,_#FF7272,_#F67280)] opacity-0 overflow-hidden">
-                <!-- Medical Background Elements -->
-                <!-- ECG Line (Subtle Waveform) -->
-                <svg class="absolute bottom-0 left-0 w-full h-20 opacity-20" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M0,60 C100,10 200,110 300,60 C400,10 500,110 600,60 C700,10 800,110 900,60 C1000,10 1100,110 1200,60"
-                        stroke="white" stroke-width="2" fill="none" stroke-dasharray="8,4" />
-                </svg>
+          </div>
+        </div>
+        <!-- Banner 2 -->
+        <div
+          class="banner-slide absolute inset-0 bg-[radial-gradient(circle,_#FFB5B5,_#FF7272,_#F67280)] opacity-0 overflow-hidden"
+        >
+          <!-- Medical Background Elements -->
+          <!-- ECG Line (Subtle Waveform) -->
+          <svg
+            class="absolute bottom-0 left-0 w-full h-20 opacity-20"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,60 C100,10 200,110 300,60 C400,10 500,110 600,60 C700,10 800,110 900,60 C1000,10 1100,110 1200,60"
+              stroke="white"
+              stroke-width="2"
+              fill="none"
+              stroke-dasharray="8,4"
+            />
+          </svg>
 
-                <!-- Stethoscope Graphic -->
-                <svg class="absolute right-12 bottom-16 w-28 h-28 opacity-15" viewBox="0 0 100 100">
-                    <path d="M30,50 Q50,30 70,50 Q80,60 85,55" stroke="white" stroke-width="2" fill="none" />
-                    <circle cx="25" cy="50" r="8" fill="none" stroke="white" stroke-width="2" />
-                    <circle cx="75" cy="50" r="8" fill="none" stroke="white" stroke-width="2" />
-                    <path d="M85,55 L85,30 Q85,15 70,15 L30,15 Q15,15 15,30 L15,70" stroke="white" stroke-width="2"
-                        fill="none" />
-                </svg>
+          <!-- Stethoscope Graphic -->
+          <svg
+            class="absolute right-12 bottom-16 w-28 h-28 opacity-15"
+            viewBox="0 0 100 100"
+          >
+            <path
+              d="M30,50 Q50,30 70,50 Q80,60 85,55"
+              stroke="white"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle
+              cx="25"
+              cy="50"
+              r="8"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+            />
+            <circle
+              cx="75"
+              cy="50"
+              r="8"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M85,55 L85,30 Q85,15 70,15 L30,15 Q15,15 15,30 L15,70"
+              stroke="white"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
 
-                <!-- Medical Dots Pattern -->
-                <svg class="absolute top-1/4 left-1/4 w-48 h-48 opacity-10" viewBox="0 0 100 100">
-                    <circle cx="15" cy="20" r="1.5" fill="white" />
-                    <circle cx="35" cy="30" r="1.5" fill="white" />
-                    <circle cx="55" cy="25" r="1.5" fill="white" />
-                    <circle cx="75" cy="35" r="1.5" fill="white" />
-                    <circle cx="25" cy="60" r="1.5" fill="white" />
-                    <circle cx="45" cy="70" r="1.5" fill="white" />
-                    <circle cx="65" cy="65" r="1.5" fill="white" />
-                    <circle cx="85" cy="75" r="1.5" fill="white" />
-                </svg>
+          <!-- Medical Dots Pattern -->
+          <svg
+            class="absolute top-1/4 left-1/4 w-48 h-48 opacity-10"
+            viewBox="0 0 100 100"
+          >
+            <circle cx="15" cy="20" r="1.5" fill="white" />
+            <circle cx="35" cy="30" r="1.5" fill="white" />
+            <circle cx="55" cy="25" r="1.5" fill="white" />
+            <circle cx="75" cy="35" r="1.5" fill="white" />
+            <circle cx="25" cy="60" r="1.5" fill="white" />
+            <circle cx="45" cy="70" r="1.5" fill="white" />
+            <circle cx="65" cy="65" r="1.5" fill="white" />
+            <circle cx="85" cy="75" r="1.5" fill="white" />
+          </svg>
 
-                <!-- Heart Monitor Graphic -->
-                <svg class="absolute left-16 top-1/3 w-32 h-32 opacity-15" viewBox="0 0 100 100">
-                    <rect x="15" y="30" width="70" height="40" rx="3" fill="none" stroke="white" stroke-width="1.5" />
-                    <path d="M20,50 Q30,30 40,50 Q50,70 60,50 Q70,30 80,50" stroke="white" stroke-width="2"
-                        fill="none" />
-                </svg>
+          <!-- Heart Monitor Graphic -->
+          <svg
+            class="absolute left-16 top-1/3 w-32 h-32 opacity-15"
+            viewBox="0 0 100 100"
+          >
+            <rect
+              x="15"
+              y="30"
+              width="70"
+              height="40"
+              rx="3"
+              fill="none"
+              stroke="white"
+              stroke-width="1.5"
+            />
+            <path
+              d="M20,50 Q30,30 40,50 Q50,70 60,50 Q70,30 80,50"
+              stroke="white"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
 
-                <!-- Plus Icons (Medical Crosses) -->
-                <svg class="absolute left-1/3 top-1/2 w-20 h-20 opacity-10" viewBox="0 0 24 24" fill="none"
-                    stroke="white" stroke-width="1">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m4-4H8" />
-                </svg>
-                <svg class="absolute right-1/3 bottom-1/3 w-20 h-20 opacity-10" viewBox="0 0 24 24" fill="none"
-                    stroke="white" stroke-width="1">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m4-4H8" />
-                </svg>
+          <!-- Plus Icons (Medical Crosses) -->
+          <svg
+            class="absolute left-1/3 top-1/2 w-20 h-20 opacity-10"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6v12m4-4H8"
+            />
+          </svg>
+          <svg
+            class="absolute right-1/3 bottom-1/3 w-20 h-20 opacity-10"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6v12m4-4H8"
+            />
+          </svg>
 
-                <!-- Main Content -->
-                <div class="container mx-auto px-4 h-full flex items-center justify-center relative z-10">
-                    <div class="w-full max-w-4xl text-center">
-                        <div class="text-white">
-                            <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">
-                                <span class="text-white-600">Expert Care for </span><br>
-                                <span class="text-[#141E46]">Every Heartbeat</span>
-                            </h1>
-                            <p class="text-xl mb-8 opacity-90 mx-auto max-w-2xl">
-                                State-of-the-art medical facilities and cutting-edge treatment methods for optimal
-                                patient outcomes.
-                            </p>
-                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                                <a href="services.html"
-                                    class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center">
-                                    Our Services
-                                </a>
-                                <a href="contact.html"
-                                    class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors text-center">
-                                    Get Consultation
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+          <!-- Main Content -->
+          <div
+            class="container mx-auto px-4 h-full flex items-center justify-center relative z-10"
+          >
+            <div class="w-full max-w-4xl text-center">
+              <div class="text-white">
+                <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">
+                  <span class="text-white-600">Expert Care for </span><br />
+                  <span class="text-[#141E46]">Every Heartbeat</span>
+                </h1>
+                <p class="text-xl mb-8 opacity-90 mx-auto max-w-2xl">
+                  State-of-the-art medical facilities and cutting-edge treatment
+                  methods for optimal patient outcomes.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a
+                    href="services.html"
+                    class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center"
+                  >
+                    Our Services
+                  </a>
+                  <a
+                    href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar%2C%20I%20would%20like%20to%20get%20a%20consultation."
+                    target="_blank"
+                    class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors text-center"
+                  >
+                    Get Consultation
+                  </a>
                 </div>
+              </div>
             </div>
-            <!-- Banner 3 -->
-            <!-- <div class="banner-slide absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-0">
-                <div class="container mx-auto px-4 h-full flex items-center">
-                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
-                        <div class="text-white">
-                            <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">
-                                Your Health, Our Priority
-                            </h1>
-                            <p class="text-xl mb-8 opacity-90">
-                                Committed to providing personalized healthcare with compassion, expertise, and the
-                                highest standards of medical care.
-                            </p>
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <a href="contact.html"
-                                    class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center">
-                                    Schedule Visit
-                                </a>
-                                <a href="about.html"
-                                    class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors text-center">
-                                    About Doctor
-                                </a>
-                            </div>
-                        </div>
-                        <div class="hidden md:block">
-                            <img src="/placeholder.svg?height=500&width=400" alt="Healthcare"
-                                class="rounded-lg shadow-2xl">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+          </div>
+        </div>
+        <!-- Banner 3 -->
+        <div
+          class="banner-slide absolute inset-0 bg-gradient-to-r from-pink-50 via-pink-100 to-pink-200"
+        >
+          <div
+            class="container mx-auto px-4 h-full flex items-center justify-center"
+          >
+            <div class="text-center max-w-3xl">
+              <h1
+                class="text-4xl md:text-6xl font-heading font-bold mb-6 text-gray-800"
+              >
+                Advanced Heart Care <br />
+                <span class="text-pink-700">Personalized for You</span>
+              </h1>
 
-            <!-- Banner Navigation Dots -->
-            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
-                <button class="banner-dot active w-3 h-3 rounded-full bg-white opacity-50" data-slide="0"></button>
-                <button class="banner-dot w-3 h-3 rounded-full bg-white opacity-50" data-slide="1"></button>
-                <!-- <button class="banner-dot w-3 h-3 rounded-full bg-white opacity-50" data-slide="2"></button> -->
+              <p class="text-lg mb-8 text-gray-700">
+                Committed to providing personalized healthcare with compassion,
+                expertise, and the highest standards of medical care.
+              </p>
+
+              <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a
+                  href="contact.html"
+                  class="bg-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-700 transition"
+                >
+                  Schedule Visit
+                </a>
+
+                <a
+                  href="about.html"
+                  class="border-2 border-pink-600 text-pink-600 px-8 py-3 rounded-full font-semibold hover:bg-pink-600 hover:text-white transition"
+                >
+                  About Doctor
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner Navigation Dots -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3"
+      >
+        <button
+          class="banner-dot active w-3 h-3 rounded-full bg-white opacity-50"
+          data-slide="0"
+        ></button>
+        <button
+          class="banner-dot w-3 h-3 rounded-full bg-white opacity-50"
+          data-slide="1"
+        ></button>
+        <button
+          class="banner-dot w-3 h-3 rounded-full bg-white opacity-50"
+          data-slide="2"
+        ></button>
+      </div>
     </section>
 
     <!-- About Doctor Section -->
-    <section class="py-20 bg-light">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="text-primary font-semibold mb-4">ABOUT DOCTOR</div>
-                    <h2 class="text-4xl font-heading font-bold text-dark mb-6">
-                        Meet Dr. Pritam Titar
-                    </h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        With over 15 years of experience in medical practice, Dr. Pritam Titar is dedicated to providing
-                        exceptional healthcare services. His expertise spans across various medical specialties,
-                        ensuring comprehensive care for all patients.
-                    </p>
-                    <p class="text-gray-600 mb-8 leading-relaxed">
-                        Dr. Titar believes in a patient-centered approach, combining advanced medical knowledge with
-                        compassionate care to achieve the best possible outcomes for his patients.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="about.html"
-                            class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-[#141E46] hover:text-white transition-colors text-center">
-                            About Doctor
-                        </a>
-                        <a href="contact.html"
-                            class="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition-colors text-center">
-                            Book Consultation
-                        </a>
-                    </div>
-                </div>
-                <div class="order-first md:order-last">
-                    <img src="Images/doc.png" alt="Dr. Pritam Titar" class="rounded-lg  w-full max-w-sm mx-auto">
-                </div>
-
+    <section class="py-12 -mt-10 bg-light">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="text-primary font-semibold mb-4">ABOUT DOCTOR</div>
+            <h2 class="text-4xl font-heading font-bold text-dark mb-6">
+              Meet Dr. Pritam Titar
+            </h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Dr. Pritam Titar is a leading Interventional Cardiologist
+              dedicated to providing compassionate, evidence-based, and
+              accessible cardiac care across Pune. He combines expertise with a
+              patient-centered approach to ensure that every individual receives
+              the attention and care they deserve.
+            </p>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              With outpatient services available at five convenient centres,
+              advanced diagnostic facilities, and state-of-the-art
+              interventional treatment options, Dr. Titar ensures timely,
+              accurate, and personalized heart care tailored to each patient’s
+              needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="about.html"
+                class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-[#141E46] hover:text-white transition-colors text-center"
+              >
+                About Doctor
+              </a>
+              <a
+                href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                target="_blank"
+                class="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition-colors text-center"
+              >
+                Book Consultation
+              </a>
             </div>
+          </div>
+          <div class="order-first md:order-last">
+            <img
+              src="Images/doc.png"
+              alt="Dr. Pritam Titar"
+              class="rounded-lg w-full max-w-sm mx-auto"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Facility Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <div class="text-primary font-heading font-semibold mb-4">OUR FACILITIES</div>
-                <h2 class="text-4xl font-heading font-bold text-dark mb-6">
-                    Comprehensive Medical facilities
-                </h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    We offer a wide range of medical facilities to meet all your healthcare needs with the highest
-                    standards of care.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <!-- Facility 1 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
-                    style="background: radial-gradient(at bottom right, #FAEDF0 10%, transparent 40%), radial-gradient(at top left, #F6E1E1 10%, transparent 40%);">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-stethoscope text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">General Consultation</h3>
-                    <p class="text-gray-600">Comprehensive health assessments and general medical consultations for all
-                        age groups.</p>
-                </div>
-
-                <!-- Facility 2 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
-                    style="background: radial-gradient(at bottom right, #FAEDF0 10%, transparent 40%), radial-gradient(at top left, #F6E1E1 10%, transparent 40%);">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-heart text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Cardiology</h3>
-                    <p class="text-gray-600">Specialized cardiac care including diagnosis and treatment of heart
-                        conditions.</p>
-                </div>
-
-                <!-- Facility 3 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
-                    style="background: radial-gradient(at bottom right, #FAEDF0 10%, transparent 40%), radial-gradient(at top left, #F6E1E1 10%, transparent 40%);">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-user-md text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Surgery</h3>
-                    <p class="text-gray-600">Advanced surgical procedures with state-of-the-art equipment and
-                        techniques.</p>
-                </div>
-
-                <!-- Facility 4 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
-                    style="background: radial-gradient(at bottom right, #FAEDF0 10%, transparent 40%), radial-gradient(at top left, #F6E1E1 10%, transparent 40%);">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-microscope text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Laboratory</h3>
-                    <p class="text-gray-600">Complete diagnostic laboratory services with accurate and timely results.
-                    </p>
-                </div>
-
-                <!-- Facility 5 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
-                    style="background: radial-gradient(at bottom right, #FAEDF0 10%, transparent 40%), radial-gradient(at top left, #F6E1E1 10%, transparent 40%);">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-x-ray text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Radiology</h3>
-                    <p class="text-gray-600">Advanced imaging services including X-ray, CT scan, and MRI facilities.</p>
-                </div>
-
-                <!-- Facility 6 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
-                    style="background: radial-gradient(at bottom right, #FAEDF0 10%, transparent 40%), radial-gradient(at top left, #F6E1E1 10%, transparent 40%);">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-pills text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Pharmacy</h3>
-                    <p class="text-gray-600">On-site pharmacy with a wide range of medications and healthcare products.
-                    </p>
-                </div>
-
-            </div>
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-10">
+          <div class="text-primary font-heading font-semibold mb-4">
+            WHY CHOOSE US
+          </div>
+          <h2
+            class="text-3xl md:text-4xl font-heading font-bold text-dark mb-4"
+          >
+            Why Patients Trust Dr. Pritam Titar
+          </h2>
         </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
+            style="
+              background: radial-gradient(
+                  at bottom right,
+                  #faedf0 10%,
+                  transparent 40%
+                ),
+                radial-gradient(at top left, #f6e1e1 10%, transparent 40%);
+            "
+          >
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-heartbeat text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Comprehensive Cardiac Care
+            </h3>
+            <p class="text-gray-600 text-sm">
+              From ECG and 2D Echo to angiography, angioplasty, preventive
+              cardiology, and cardio-oncology — complete heart care under one
+              roof.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
+            style="
+              background: radial-gradient(
+                  at bottom right,
+                  #faedf0 10%,
+                  transparent 40%
+                ),
+                radial-gradient(at top left, #f6e1e1 10%, transparent 40%);
+            "
+          >
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-map-marker-alt text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Multiple OPD Locations
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Convenient access to expert cardiac care at multiple centres:
+              Chakan, Alandi, Chinchwad, Moshi, and Alephata.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
+            style="
+              background: radial-gradient(
+                  at bottom right,
+                  #faedf0 10%,
+                  transparent 40%
+                ),
+                radial-gradient(at top left, #f6e1e1 10%, transparent 40%);
+            "
+          >
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-user-md text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Interventional Expertise
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Experienced in managing complex coronary artery disease,
+              emergencies, heart failure, and cardio-oncology cases.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow relative border border-gray-300"
+            style="
+              background: radial-gradient(
+                  at bottom right,
+                  #faedf0 10%,
+                  transparent 40%
+                ),
+                radial-gradient(at top left, #f6e1e1 10%, transparent 40%);
+            "
+          >
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-hand-holding-heart text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Patient-Centric Approach
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Clear communication, detailed guidance, ethical practice, and
+              long-term follow-up for every patient.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Call-to-Action Banner -->
-    <section class="py-16 bg-gradient-to-r from-[#A0153E] via-[#C70039] to-[#FF6969]">
-
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Ready to Take Care of Your Health?
-            </h2>
-            <p class="text-xl text-white opacity-90 mb-8">
-                Book your appointment today and experience quality healthcare
-            </p>
-            <a href="contact.html"
-                class="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-[#141E46] hover:text-white transition-colors inline-block">
-                Book Appointment Now
-            </a>
-        </div>
+    <section
+      class="py-16 bg-gradient-to-r from-[#A0153E] via-[#C70039] to-[#FF6969]"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+          Ready to Take Care of Your Health?
+        </h2>
+        <p class="text-xl text-white opacity-90 mb-8">
+          Book your appointment today and experience quality healthcare
+        </p>
+        <a
+          href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar%2C%20I%20would%20like%20to%20book%20an%20appointment%20now."
+          target="_blank"
+          class="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-[#141E46] hover:text-white transition-colors inline-block"
+        >
+          Book Appointment Now
+        </a>
+      </div>
     </section>
 
     <!-- Services Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <div class="text-primary font-semibold mb-4">OUR FACILITIES</div>
-                <h2 class="text-4xl font-heading font-bold text-dark mb-6">
-                    Comprehensive Medical facilities
-                </h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    We offer a wide range of medical facilities to meet all your healthcare needs with the highest
-                    standards of care.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <!-- Service 1 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-x-ray text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Angiography </h3>
-                    <p class="text-gray-600"> Angiography is a diagnostic imaging test that shows blood vessels and
-                        detects blockages or abnormalities, especially in the heart.</p>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-syringe text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Angioplasty</h3>
-                    <p class="text-gray-600">Angioplasty is a procedure to open blocked arteries and restore normal
-                        blood flow to the heart.</p>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-heartbeat text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Cardiac Rehabilitation</h3>
-                    <p class="text-gray-600">Cardiac rehabilitation helps improve heart health through exercise,
-                        education, and support after a heart event or surgery.</p>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-procedures text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Heart Valve Surgery</h3>
-                    <p class="text-gray-600">Heart valve surgery is a procedure to repair or replace one or more damaged
-                        heart valves, helping restore proper blood flow and improve heart function.
-                    </p>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-wind text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Balloon Mitral Valvotomy</h3>
-                    <p class="text-gray-600">Advanced imaging services including X-ray, CT scan, and MRI facilities.</p>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="bg-light p-8 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-vials text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-semibold text-dark mb-4">Bypass Surgery</h3>
-                    <p class="text-gray-600">On-site pharmacy with a wide range of medications and healthcare products.
-                    </p>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <a href="services.html"
-                    class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-[#141E46] hover:text-white transition-colors">
-                    View More Services
-                </a>
-            </div>
+    <section class="py-14 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <div class="text-primary font-semibold mb-3">OUR SERVICES</div>
+          <h2
+            class="text-3xl md:text-4xl font-heading font-bold text-dark mb-4"
+          >
+            Comprehensive Cardiac Services
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+            We provide advanced, evidence-based cardiac care with accurate
+            diagnosis, expert intervention, and patient-focused treatment.
+          </p>
         </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          <!-- Service 1 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]"
+          >
+            <div
+              class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-stethoscope text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Cardiology Consultation & Diagnosis
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Comprehensive evaluation using ECG, 2D Echo, TMT, and Holter
+              monitoring.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]"
+          >
+            <div
+              class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-x-ray text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Coronary Angiography
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Precise imaging to detect blockages and assess coronary artery
+              disease.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]"
+          >
+            <div
+              class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-syringe text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Angioplasty & Interventional Care
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Minimally invasive procedures to restore healthy blood flow.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]"
+          >
+            <div
+              class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-heartbeat text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Heart Failure Management
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Long-term care to improve heart function and quality of life.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]"
+          >
+            <div
+              class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-heart text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Preventive Cardiology
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Risk assessment and lifestyle guidance to prevent heart disease.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div
+            class="bg-light p-6 rounded-lg hover:shadow-lg transition-shadow border-2 border-[#141E46]"
+          >
+            <div
+              class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-ambulance text-white text-xl"></i>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-dark mb-2">
+              Cardio-Oncology & Emergency Care
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Specialized care for cancer patients and cardiac emergencies.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a
+            href="services.html"
+            class="bg-primary text-white px-7 py-3 rounded-full font-semibold hover:bg-[#141E46] transition-colors"
+          >
+            View All Services
+          </a>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#141E46]  text-white py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-heading font-bold text-[#FF6969] mb-6">Dr. Pritam Titar</h3>
-                    <p class="text-gray-300 mb-6">
-                        Providing exceptional healthcare services with compassion, expertise, and dedication to patient
-                        well-being.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/people/DrPritam-Titar-Cardiologist/100076239281917/?mibextid=ZbWKwL"
-                            target="_blank" class="text-white hover:text-[#FF6969] transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/dr-pritam-titar-54199449/" target="_blank"
-                            class="text-white hover:text-[#FF6969] transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.instagram.com/pritamtitar/?igshid=ZDdkNTZiNTM%3D" target="_blank"
-                            class="text-white hover:text-[#FF6969] transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
+    <!-- WhatsApp Floating Button (Left Side) -->
+    <div
+      id="whatsapp-button"
+      class="fixed bottom-6 left-6 z-50 animate-bounce-once"
+    >
+      <a
+        href="https://wa.me/917030108911"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block w-14 h-14 rounded-full bg-[#25D366] shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+        aria-label="Chat with us on WhatsApp"
+      >
+        <div class="relative">
+          <!-- WhatsApp Icon -->
+          <i class="fab fa-whatsapp text-white text-2xl"></i>
 
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">Home</a>
-                        </li>
-                        <li><a href="about.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">About</a>
-                        </li>
-                        <li><a href="services.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Services</a></li>
-                        <li><a href="contact.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <a href="/services.html">
-                        <h4 class="text-lg font-semibold mb-6 hover:text-[#FF6969] transition">Services</h4>
-                    </a>
-                    <ul class="space-y-3">
-                        <li><a href="/services.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Angiography</a></li>
-                        <li><a href="/services.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Angioplasty</a></li>
-                        <li><a href="/services.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Cardiac
-                                Rehabilitation</a></li>
-                        <li><a href="/services.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">Heart
-                                Valve Surgery</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
-                    <div class="space-y-3">
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-phone text-[#FF6969]"></i>
-                            <a href="tel:+919876543210" class="text-gray-300 hover:text-[#FF6969] transition-colors">
-                                +91 98765 43210
-                            </a>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-envelope text-[#FF6969]"></i>
-                            <a href="mailto:dr.pritamtitar@email.com"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">
-                                dr.pritamtitar@email.com
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
-                <p class="text-gray-300">
-                    &copy; 2025 Dr. Pritam Titar. All rights reserved. Developed by
-                    <a href="https://github.com/Shreyakamble08" target="_blank" class="text-[#FF6969]  hover:underline">
-                        Shreya Kamble
-                    </a>
-                </p>
-
-            </div>
+          <!-- Notification Badge (optional) -->
+          <!-- <span class="absolute -top-2 -right-2 w-6 h-6 bg-red-500 text-white text-xs rounded-full flex items-center justify-center animate-pulse">
+                <i class="fas fa-comment"></i>
+            </span> -->
         </div>
+
+        <!-- Tooltip on hover (positioned to the right) -->
+        <div
+          class="absolute left-16 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none"
+        >
+          Chat with us
+          <div
+            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2"
+          >
+            <div class="w-2 h-2 bg-gray-900 rotate-45"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Back to Top Button (Added) -->
+    <button
+      id="backToTop"
+      class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-primary text-white rounded-full shadow-lg hover:shadow-xl hover:bg-[#A0153E] transition-all duration-300 flex items-center justify-center opacity-0 translate-y-20"
+      aria-label="Back to top"
+    >
+      <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-[#141E46] text-white py-14">
+      <div class="container mx-auto px-4">
+        <!-- Footer Grid -->
+        <div class="grid md:grid-cols-4 gap-x-4 gap-y-10">
+          <!-- About -->
+          <div>
+            <h3 class="text-2xl font-heading font-bold text-[#FF6969] mb-5">
+              Dr. Pritam Titar
+            </h3>
+            <p class="text-gray-300 leading-relaxed">
+              Providing exceptional healthcare services with compassion,
+              expertise, and dedication to patient well-being.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="/services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Angiography
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Angioplasty
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Cardiac Rehabilitation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Heart Valve Surgery
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contact</h4>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <i class="fas fa-phone text-[#FF6969]"></i>
+                <a
+                  href="tel:+917030108911"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  +91 70301 08911
+                </a>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fas fa-envelope text-[#FF6969]"></i>
+                <a
+                  href="mailto:pritamtitar@gmail.com"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  pritamtitar@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+          <p class="text-gray-300 text-sm">
+            © 2026 Dr. Pritam Titar. All rights reserved.
+            <span class="block sm:inline">
+              Developed by
+              <a
+                href="https://kunashmedia.com/"
+                target="_blank"
+                class="text-[#FF6969] hover:underline"
+              >
+                Kunash Media
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+      //mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+
+        if (mobileMenu.classList.contains("hidden")) {
+          menuIcon.classList.remove("fa-times");
+          menuIcon.classList.add("fa-bars");
+        } else {
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-times");
+        }
+      });
+
+      // Banner slider
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".banner-slide");
+      const dots = document.querySelectorAll(".banner-dot");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.opacity = i === index ? "1" : "0";
         });
 
-        // Banner slider
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.banner-slide');
-        const dots = document.querySelectorAll('.banner-dot');
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.style.opacity = i === index ? '1' : '0';
-            });
-
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('opacity-100', i === index);
-                dot.classList.toggle('opacity-50', i !== index);
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        // Auto-slide every 5 seconds
-        setInterval(nextSlide, 5000);
-
-        // Dot navigation
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentSlide = index;
-                showSlide(currentSlide);
-            });
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("opacity-100", i === index);
+          dot.classList.toggle("opacity-50", i !== index);
         });
+      }
 
-        // Initialize first slide
-        showSlide(0);
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      // Auto-slide every 5 seconds
+      setInterval(nextSlide, 5000);
+
+      // Dot navigation
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          currentSlide = index;
+          showSlide(currentSlide);
+        });
+      });
+
+      // Initialize first slide
+      showSlide(0);
+
+      // Back to Top Button
+      const backToTopBtn = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 400) {
+          backToTopBtn.classList.remove("opacity-0", "translate-y-20");
+          backToTopBtn.classList.add("opacity-100", "translate-y-0");
+        } else {
+          backToTopBtn.classList.remove("opacity-100", "translate-y-0");
+          backToTopBtn.classList.add("opacity-0", "translate-y-20");
+        }
+      });
+
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
     </script>
-</body>
-
+  </body>
 </html>

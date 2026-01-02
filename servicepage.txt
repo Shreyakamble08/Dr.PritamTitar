@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Services - Dr. Pritam Titar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#C70039',
+                        secondary: '#45B7B8',
+                        accent: '#96CEB4',
+                        dark: '#2C3E50',
+                        light: '#F8F9FA'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'heading': ['Nunito', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+   <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="font-sans">
+    <!-- Top Navbar -->
+       <div class="bg-[#141E46] text-white py-2 hidden md:block">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center text-sm">
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-[#FF6969]"></i>
+                        <a href="tel:+917030108911" class="hover:text-[#FF6969] transition-colors">
+                            +91 70301 08911
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-[#FF6969]"></i>
+                        <a href="mailto:pritamtitar@gmail.com" class="hover:text-[#FF6969] transition-colors">
+                            pritamtitar@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://www.facebook.com/people/DrPritam-Titar-Cardiologist/100076239281917/?mibextid=ZbWKwL"
+                        target="_blank" class="text-white hover:text-[#FF6969] transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dr-pritam-titar-54199449/" target="_blank"
+                        class="text-white hover:text-[#FF6969] transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pritamtitar/?igshid=ZDdkNTZiNTM%3D" target="_blank"
+                        class="text-white hover:text-[#FF6969] transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="text-2xl font-heading font-bold text-[#141E46]">
+                        Dr. Pritam Titar
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
+                    <a href="services.html"
+                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
+                    <a href="contact.html"
+                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
+                    <a href="contact.html"
+                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium">
+                        Book Appointment
+                    </a>
+                </div>
+
+               <!-- Mobile Menu Button -->
+<button id="mobile-menu-btn" class="md:hidden text-dark focus:outline-none">
+    <i id="menu-icon" class="fas fa-bars text-xl"></i>
+</button>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
+                    <a href="services.html"
+                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
+                    <a href="contact.html"
+                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
+                    <a href="contact.html"
+                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium text-center">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="bg-gradient-to-r from-[#A0153E] via-[#C70039] to-[#FF6969] py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+                Our Medical Services
+            </h1>
+            <p class="text-xl text-white opacity-90">
+                Comprehensive Healthcare Solutions for Your Well-being
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-light rounded-lg hover:shadow-lg transition-shadow overflow-hidden border border-gray-300">
+                    <!-- Full-width top section image -->
+                    <div class="w-full h-56 bg-gray-200 overflow-hidden">
+                        <img src="Images/angioplasty.png" alt="angioplasty" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Content section -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-dark mb-3">Angioplasty</h3>
+                        <p class="text-gray-600 mb-4">Angioplasty is a medical procedure used to open narrowed or
+                            blocked arteries in the heart.</p>
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Balloon tube
+                                opens blocked artery
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>A stent is
+                                placed to keep the artery open.
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Inflated to push
+                                plaque aside
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="text-primary font-semibold hover:text-[#FF6969] transition-colors inline-flex items-center">
+                            Book Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-light rounded-lg hover:shadow-lg transition-shadow overflow-hidden border border-gray-300">
+                    <!-- Full-width top section image -->
+                    <div class="w-full h-56 bg-gray-200 overflow-hidden">
+                        <img src="Images/cardiac.png" alt="cardiac" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Content section -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-dark mb-3">Cardiac Rehabilitation</h3>
+                        <p class="text-gray-600 mb-4">Cardiac Rehabilitation is a structured program designed to help
+                            individuals recover after heart-related conditions or surgeries.</p>
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Supervised
+                                exercise to strengthen the heart
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Nutrition and
+                                lifestyle guidance
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Reduces risk of
+                                future heart problems
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="text-primary font-semibold hover:text-[#FF6969] transition-colors inline-flex items-center">
+                            Book Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-light rounded-lg hover:shadow-lg transition-shadow overflow-hidden border border-gray-300">
+                    <!-- Full-width top section image -->
+                    <div class="w-full h-56 bg-gray-200 overflow-hidden">
+                        <img src="Images/Angiography.png" alt="Angiography" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Content section -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-dark mb-3">Angiography</h3>
+                        <p class="text-gray-600 mb-4">Angiography is a diagnostic procedure used to visualize the inside
+                            of blood vessels, especially arteries in the heart. </p>
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Uses contrast
+                                dye and X-rays to view arteries
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Detects
+                                blockages or narrowed vessels
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Helps plan
+                                treatments like angioplasty or surgery
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="text-primary font-semibold hover:text-[#FF6969] transition-colors inline-flex items-center">
+                            Book Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="bg-light rounded-lg hover:shadow-lg transition-shadow overflow-hidden border border-gray-300">
+                    <!-- Full-width top section image -->
+                    <div class="w-full h-56 bg-gray-200 overflow-hidden">
+                        <img src="Images/ballon.png" alt="Balloon Mitral Valvotomy " class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Content section -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-dark mb-3">Balloon Mitral Valvotomy </h3>
+                        <p class="text-gray-600 mb-4">Balloon Mitral Valvotomy is a minimally invasive treatment for
+                            narrowed mitral valves in the heart.</p>
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Treats narrowed
+                                mitral valve without open-heart surgery
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>A balloon is
+                                inflated to open the valve
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Improves blood
+                                flow and eases breathlessness.
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="text-primary font-semibold hover:text-[#FF6969] transition-colors inline-flex items-center">
+                            Book Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="bg-light rounded-lg hover:shadow-lg transition-shadow overflow-hidden border border-gray-300">
+                    <!-- Full-width top section image -->
+                    <div class="w-full h-56 bg-gray-200 overflow-hidden">
+                        <img src="Images/valve.png" alt="Heart Valve Surgery  " class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Content section -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-dark mb-3">Heart Valve Surgery </h3>
+                        <p class="text-gray-600 mb-4">Heart Valve Surgery is performed to repair or replace one or more
+                            damaged heart valves that affect blood flow through the heart.</p>
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Repairs or
+                                replaces faulty heart valves
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Improves blood
+                                circulation and heart efficiency
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Can be done
+                                through open or minimally invasive surgery
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="text-primary font-semibold hover:text-[#FF6969] transition-colors inline-flex items-center">
+                            Book Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div
+                    class="bg-light rounded-lg hover:shadow-lg transition-shadow overflow-hidden border border-gray-300">
+                    <!-- Full-width top section image -->
+                    <div class="w-full h-56 bg-gray-200 overflow-hidden">
+                        <img src="Images/BYpass.png" alt="Bypass Surgery" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Content section -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-dark mb-3">Bypass Surgery </h3>
+                        <p class="text-gray-600 mb-4">Bypass Surgery is a procedure to restore blood flow to the heart
+                            by creating a new path around blocked arteries.</p>
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Uses a blood
+                                vessel graft from leg, arm, or chest.
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Improves blood
+                                supply to heart muscle.
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Reduces risk of
+                                heart attack and relieves chest pain.
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="text-primary font-semibold hover:text-[#FF6969] transition-colors inline-flex items-center">
+                            Book Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Service 7 -->
+                <div
+                    class="bg-light rounded-lg hover:shadow-lg transition-shadow overflow-hidden border border-gray-300">
+                    <!-- Full-width top section image -->
+                    <div class="w-full h-56 bg-gray-200 overflow-hidden">
+                        <img src="Images/spetal.png" alt="Septal Defect Closure" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Content section -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-dark mb-3">Septal Defect Closure </h3>
+                        <p class="text-gray-600 mb-4">Septal Defect Closure is a treatment to fix a hole in the heart
+                            between its chambers for better blood flow.</p>
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Closes holes
+                                between heart chambers (ASD/VSD).
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Can be done
+                                surgically or via a catheter-based device.
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Prevents heart
+                                failure, irregular heartbeat, and blood mixing.
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="text-primary font-semibold hover:text-[#FF6969] transition-colors inline-flex items-center">
+                            Book Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div
+                    class="bg-light rounded-lg hover:shadow-lg transition-shadow overflow-hidden border border-gray-300">
+                    <!-- Full-width top section image -->
+                    <div class="w-full h-56 bg-gray-200 overflow-hidden">
+                        <img src="Images/Varicose.png" alt="Varicose Vein Treatment" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Content section -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-dark mb-3">Varicose Vein Treatment</h3>
+                        <p class="text-gray-600 mb-4">Varicose Vein Treatment involves procedures to relieve pain and
+                            improve appearance by closing or removing enlarged, twisted veins.</p>
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Minimally
+                                invasive methods like laser therapy or sclerotherapy are commonly used.
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Improves blood
+                                circulation and reduces pain or swelling.
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Enhances
+                                cosmetic appearance by removing bulging veins.
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="text-primary font-semibold hover:text-[#FF6969] transition-colors inline-flex items-center">
+                            Book Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 9 -->
+                <div
+                    class="bg-light rounded-lg hover:shadow-lg transition-shadow overflow-hidden border border-gray-300">
+                    <!-- Full-width top section image -->
+                    <div class="w-full h-56 bg-gray-200 overflow-hidden">
+                        <img src="Images/pacemaker.png" alt="Pacemaker" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Content section -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-dark mb-3">Pacemaker</h3>
+                        <p class="text-gray-600 mb-4">A pacemaker is a small device placed in the chest to help control
+                            abnormal heart rhythms.</p>
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Regulates slow
+                                or irregular heartbeats.
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Implanted under
+                                the skin near the chest.
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Sends electrical
+                                signals to maintain heart rhythm.
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="text-primary font-semibold hover:text-[#FF6969] transition-colors inline-flex items-center">
+                            Book Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Services -->
+   <section class="py-16 bg-light">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-heading font-bold text-dark mb-4">
+                Other Services
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Additional Heart Care Solutions
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Card 1: Electrocardiogram -->
+            <div class="text-center p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="w-16 h-16 bg-[#C70039] rounded-full flex items-center justify-center mx-auto mb-4 drop-shadow-md">
+                    <i class="fas fa-heartbeat text-white text-2xl drop-shadow-md"></i>
+                </div>
+                <h3 class="text-lg font-heading font-semibold text-[#141E46] mb-3">Electrocardiogram</h3>
+                <p class="text-gray-600 text-sm">An Electrocardiogram (ECG) records heart activity to detect irregularities.</p>
+            </div>
+
+            <!-- Card 2: 2D ECHO -->
+            <div class="text-center p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="w-16 h-16 bg-[#C70039] rounded-full flex items-center justify-center mx-auto mb-4 drop-shadow-md">
+                    <i class="fas fa-stethoscope text-white text-2xl drop-shadow-md"></i>
+                </div>
+                <h3 class="text-lg font-heading font-semibold text-[#141E46] mb-3">2D ECHO</h3>
+                <p class="text-gray-600 text-sm">A heart ultrasound showing real-time images of heart function.</p>
+            </div>
+
+            <!-- Card 3: Stress Test (TMT) -->
+            <div class="text-center p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="w-16 h-16 bg-[#C70039] rounded-full flex items-center justify-center mx-auto mb-4 drop-shadow-md">
+                    <i class="fas fa-person-running text-white text-2xl drop-shadow-md"></i>
+                </div>
+                <h3 class="text-lg font-heading font-semibold text-[#141E46] mb-3">Stress Test (TMT)</h3>
+                <p class="text-gray-600 text-sm">Monitors heart activity during exercise to detect problems.</p>
+            </div>
+
+            <!-- Card 4: Holter Test -->
+            <div class="text-center p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="w-16 h-16 bg-[#C70039] rounded-full flex items-center justify-center mx-auto mb-4 drop-shadow-md">
+                    <i class="fas fa-clock text-white text-2xl drop-shadow-md"></i>
+                </div>
+                <h3 class="text-lg font-heading font-semibold text-[#141E46] mb-3">Holter Test</h3>
+                <p class="text-gray-600 text-sm">Portable device records heart activity for 24–48 hours.</p>
+            </div>
+
+            <!-- Card 5: Diabetes Management -->
+            <div class="text-center p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="w-16 h-16 bg-[#C70039] rounded-full flex items-center justify-center mx-auto mb-4 drop-shadow-md">
+                    <i class="fas fa-syringe text-white text-2xl drop-shadow-md"></i>
+                </div>
+                <h3 class="text-lg font-heading font-semibold text-[#141E46] mb-3">Diabetes Management</h3>
+                <p class="text-gray-600 text-sm">Controls diabetes via blood sugar monitoring, diet, and lifestyle.</p>
+            </div>
+
+            <!-- Card 6: Diet Management -->
+            <div class="text-center p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="w-16 h-16 bg-[#C70039] rounded-full flex items-center justify-center mx-auto mb-4 drop-shadow-md">
+                    <i class="fas fa-apple-alt text-white text-2xl drop-shadow-md"></i>
+                </div>
+                <h3 class="text-lg font-heading font-semibold text-[#141E46] mb-3">Diet Management</h3>
+                <p class="text-gray-600 text-sm">Healthy eating plans for heart health and medical conditions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Call-to-Action -->
+    <section class="bg-gradient-to-r from-[#A0153E] via-[#C70039] to-[#FF6969] py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+                Need Medical Assistance?
+            </h2>
+            <p class="text-xl text-white opacity-90 mb-8">
+                Book your appointment or contact us
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">
+                    Book Appointment
+                </a>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#141E46]  text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-heading font-bold text-[#FF6969] mb-6">Dr. Pritam Titar</h3>
+                    <p class="text-gray-300 mb-6">
+                        Providing exceptional healthcare services with compassion, expertise, and dedication to patient
+                        well-being.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/people/DrPritam-Titar-Cardiologist/100076239281917/?mibextid=ZbWKwL"
+                            target="_blank" class="text-white hover:text-[#FF6969] transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dr-pritam-titar-54199449/" target="_blank"
+                            class="text-white hover:text-[#FF6969] transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pritamtitar/?igshid=ZDdkNTZiNTM%3D" target="_blank"
+                            class="text-white hover:text-[#FF6969] transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">Home</a>
+                        </li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">About</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Services</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a href="/services.html">
+                        <h4 class="text-lg font-semibold mb-6 hover:text-[#FF6969] transition">Services</h4>
+                    </a>
+                    <ul class="space-y-3">
+                        <li><a href="/services.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Angiography</a></li>
+                        <li><a href="/services.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Angioplasty</a></li>
+                        <li><a href="/services.html"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Cardiac
+                                Rehabilitation</a></li>
+                        <li><a href="/services.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">Heart
+                                Valve Surgery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-[#FF6969]"></i>
+                            <a href="tel:+919876543210" class="text-gray-300 hover:text-[#FF6969] transition-colors">
+                                +91 98765 43210
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-[#FF6969]"></i>
+                            <a href="mailto:dr.pritamtitar@email.com"
+                                class="text-gray-300 hover:text-[#FF6969] transition-colors">
+                                dr.pritamtitar@email.com
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300">
+                    &copy; 2025 Dr. Pritam Titar. All rights reserved. Developed by
+                     <a href="https://github.com/Shreyakamble08" target="_blank" class="text-[#FF6969]  hover:underline">
+                        Shreya Kamble
+                    </a>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+         //mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+
+        if (mobileMenu.classList.contains('hidden')) {
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+        } else {
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-times');
+        }
+    });
+
+    </script>
+</body>
+
+</html>

@@ -1,188 +1,778 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact & Appointments - Dr. Pritam Titar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#C70039',
-                        secondary: '#45B7B8',
-                        accent: '#96CEB4',
-                        dark: '#2C3E50',
-                        light: '#F8F9FA'
-                    },
-                    fontFamily: {
-                        'sans': ['Inter', 'system-ui', 'sans-serif'],
-                        'heading': ['Nunito', 'system-ui', 'sans-serif']
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#C70039",
+              secondary: "#45B7B8",
+              accent: "#96CEB4",
+              dark: "#2C3E50",
+              light: "#F8F9FA",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              heading: ["Nunito", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
-     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="font-sans">
-       <!-- Top Navbar -->
-    <div class="bg-[#141E46] text-white py-2 hidden md:block">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center text-sm">
-                <div class="flex items-center space-x-6">
-                    <div class="flex items-center space-x-2">
-                        <i class="fas fa-phone text-[#FF6969]"></i>
-                        <a href="tel:+919876543210" class="hover:text-[#FF6969] transition-colors">
-                            +91 98765 43210
-                        </a>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <i class="fas fa-envelope text-[#FF6969]"></i>
-                        <a href="mailto:dr.pritamtitar@email.com" class="hover:text-[#FF6969] transition-colors">
-                            dr.pritamtitar@email.com
-                        </a>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="https://www.facebook.com/people/DrPritam-Titar-Cardiologist/100076239281917/?mibextid=ZbWKwL"
-                        target="_blank" class="text-white hover:text-[#FF6969] transition-colors">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/dr-pritam-titar-54199449/" target="_blank"
-                        class="text-white hover:text-[#FF6969] transition-colors">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.instagram.com/pritamtitar/?igshid=ZDdkNTZiNTM%3D" target="_blank"
-                        class="text-white hover:text-[#FF6969] transition-colors">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body class="font-sans">
+    <!-- Top Navbar -->
+    <div class="bg-[#141E46] text-white py-2 hidden md:block">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center text-sm">
+          <div class="flex items-center space-x-6">
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-phone text-[#FF6969]"></i>
+              <a
+                href="tel:+917030108911"
+                class="hover:text-[#FF6969] transition-colors"
+              >
+                +91 70301 08911
+              </a>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-envelope text-[#FF6969]"></i>
+              <a
+                href="mailto:pritamtitar@gmail.com"
+                class="hover:text-[#FF6969] transition-colors"
+              >
+                pritamtitar@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <!-- WhatsApp Icon Only -->
+            <a
+              href="https://wa.me/917030108911"
+              target="_blank"
+              class="text-white hover:text-[#FF6969] transition-colors"
+            >
+              <i class="fab fa-whatsapp text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Main Navbar -->
     <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <div class="text-2xl font-heading font-bold text-[#141E46]">
-                        Dr. Pritam Titar
-                    </div>
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
-                    <a href="services.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
-                    <a href="contact.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
-                    <a href="contact.html"
-                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium">
-                        Book Appointment
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-dark">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <div class="text-2xl font-heading font-bold text-[#141E46]">
+              Dr. Pritam Titar
             </div>
+          </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden pb-4">
-                <div class="flex flex-col space-y-4">
-                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
-                    <a href="services.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
-                    <a href="contact.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
-                    <a href="contact.html"
-                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium text-center">
-                        Book Appointment
-                    </a>
-                </div>
-            </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >About</a
+            >
+            <a
+              href="services.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Services</a
+            >
+            <a
+              href="contact.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Contact</a
+            >
+            <a
+              href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar,%20I%20would%20like%20to%20book%20an%20appointment."
+              target="_blank"
+              class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-dark focus:outline-none"
+          >
+            <i id="menu-icon" class="fas fa-bars text-xl"></i>
+          </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden pb-4">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="index.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >About</a
+            >
+            <a
+              href="services.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Services</a
+            >
+            <a
+              href="contact.html"
+              class="text-dark hover:text-primary transition-colors font-medium"
+              >Contact</a
+            >
+            <a
+              href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar,%20I%20would%20like%20to%20book%20an%20appointment."
+              target="_blank"
+              class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium text-center"
+            >
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
-
     <!-- Page Banner -->
-    <section class="bg-gradient-to-r from-[#A0153E] via-[#C70039] to-[#FF6969] py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
-                Contact & Appointments
-            </h1>
-            <p class="text-xl text-white opacity-90">
-                Schedule Your Visit or Get in Touch
-            </p>
-        </div>
+    <section
+      class="bg-gradient-to-r from-[#A0153E] via-[#C70039] to-[#FF6969] py-20"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+          Contact & Appointments
+        </h1>
+        <p class="text-xl text-white opacity-90">
+          Schedule Your Visit or Get in Touch
+        </p>
+      </div>
     </section>
 
     <!-- Contact Section -->
-<section class="py-10 bg-gray-50">
-    <div class="container mx-auto px-4">
-        <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 max-w-4xl mx-auto">
-            <div class="flex flex-col md:flex-row">
-                <!-- Doctor Image -->
-                <div class="md:w-1/3 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
-                    <div class="relative">
-                        <img src="Images/doc.png" alt="Dr. Pritam Titar"
-                            class="w-40 h-40 rounded-full object-cover object-center border-2 border-white shadow-lg">
-                    </div>
-                </div>
-                
-                <!-- Doctor Details -->
-                <div class="md:w-2/3 p-8">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <div>
-                            <h2 class="text-2xl font-bold font-heading text-dark">Dr. Pritam Titar</h2>
-                            <p class="text-gray-500">Cardiologist</p>
-                        </div>
-                        <span class="inline-block mt-2 md:mt-0 bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
-                            15+ years experience
-                        </span>
-                    </div>
-
-                    <div class="space-y-4 mb-6">
-                        <div class="flex items-center">
-                            <i class="fas fa-phone text-primary mr-3 w-5 text-center"></i>
-                            <a href="tel:+919876543210" class="text-gray-700 hover:text-[#A0153E] transition-colors">
-                                +91 98765 43210
-                            </a>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-envelope text-primary mr-3 w-5 text-center"></i>
-                            <a href="mailto:dr.pritamtitar@email.com"
-                                class="text-gray-700 hover:text-[#A0153E] transition-colors">
-                                dr.pritamtitar@email.com
-                            </a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4 class="text-sm font-semibold font-heading text-dark mb-3">AVAILABILITY</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-gray-100 px-3 py-1 rounded-full text-xs font-medium">Mon-Fri: 9AM-6PM</span>
-                            <span class="bg-gray-100 px-3 py-1 rounded-full text-xs font-medium">Sat: 9AM-4PM</span>
-                            <span class="bg-gray-100 px-3 py-1 rounded-full text-xs font-medium">Sun: 10AM-2PM</span>
-                        </div>
-                    </div>
-                </div>
+    <section class="py-10 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div
+          class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 max-w-4xl mx-auto"
+        >
+          <div class="flex flex-col md:flex-row">
+            <!-- Doctor Image -->
+            <div
+              class="md:w-1/3 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8"
+            >
+              <div class="relative">
+                <img
+                  src="Images/doc.png"
+                  alt="Dr. Pritam Titar"
+                  class="w-40 h-40 rounded-full object-cover object-center border-2 border-white shadow-lg"
+                />
+              </div>
             </div>
+
+            <!-- Doctor Details -->
+            <div class="md:w-2/3 p-8">
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between mb-4"
+              >
+                <div>
+                  <h2 class="text-2xl font-bold font-heading text-dark">
+                    Dr. Pritam Titar
+                  </h2>
+                  <p class="text-gray-500">Cardiologist</p>
+                </div>
+                <span
+                  class="inline-block mt-2 md:mt-0 bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium"
+                >
+                  15+ years experience
+                </span>
+              </div>
+
+              <div class="space-y-4 mb-6">
+                <div class="flex items-center">
+                  <i class="fas fa-phone text-primary mr-3 w-5 text-center"></i>
+                  <a
+                    href="tel:+917030108911"
+                    class="text-gray-700 hover:text-[#A0153E] transition-colors"
+                  >
+                    +91 70301 08911
+                  </a>
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-envelope text-primary mr-3 w-5 text-center"
+                  ></i>
+                  <a
+                    href="mailto:pritamtitar@gmail.com"
+                    class="text-gray-700 hover:text-[#A0153E] transition-colors"
+                  >
+                    pritamtitar@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="text-sm font-semibold font-heading text-dark mb-3">
+                  AVAILABILITY
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="bg-gray-100 px-3 py-1 rounded-full text-xs font-medium"
+                    >Mon-Fri: 9AM-6PM</span
+                  >
+                  <span
+                    class="bg-gray-100 px-3 py-1 rounded-full text-xs font-medium"
+                    >Sat: 9AM-4PM</span
+                  >
+                  <span
+                    class="bg-gray-100 px-3 py-1 rounded-full text-xs font-medium"
+                    >Sun: 10AM-2PM</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!-- Locations Section -->
+    <section class="py-12 bg-gradient-to-b from-gray-50 to-white">
+      <div class="container mx-auto px-4">
+        <!-- Compact Header -->
+        <div class="text-center mb-6 -mt-4">
+          <h2 class="text-3xl font-bold text-[#141E46] mb-2">
+            Our Cardiac Care Locations
+          </h2>
+          <p class="text-gray-600 max-w-xl mx-auto text-sm">
+            State-of-the-art facilities across Pune for comprehensive heart care
+          </p>
+        </div>
 
+        <!-- Compact Carousel -->
+        <div class="relative">
+          <!-- Navigation Buttons -->
+          <button
+            id="prev-btn"
+            class="absolute -left-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-gray-600 hover:text-primary hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <i class="fas fa-chevron-left text-sm"></i>
+          </button>
+
+          <button
+            id="next-btn"
+            class="absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-gray-600 hover:text-primary hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <i class="fas fa-chevron-right text-sm"></i>
+          </button>
+
+          <!-- Carousel Container -->
+          <div class="overflow-hidden px-2">
+            <div
+              class="flex transition-transform duration-300 ease-out"
+              id="carousel-track"
+            >
+              <!-- Card 1: Dr. Pritam Titar Heart Clinic -->
+              <div class="w-72 flex-shrink-0 px-2">
+                <a
+                  href="https://share.google/PjVQrKN1IoPUtzmUz"
+                  target="_blank"
+                  class="block bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary/30 h-full group cursor-pointer"
+                >
+                  <!-- Map/Image Header -->
+                  <div
+                    class="relative h-32 bg-gradient-to-r from-[#141E46] to-[#A0153E] rounded-t-lg overflow-hidden"
+                  >
+                    <div
+                      class="absolute inset-0 flex flex-col items-center justify-center text-white group-hover:scale-105 transition-transform"
+                    >
+                      <i
+                        class="fas fa-map-marker-alt text-xl mb-2 group-hover:scale-110 transition-transform"
+                      ></i>
+                      <h3 class="font-semibold text-sm">Chakan</h3>
+                      <p class="text-xs opacity-80">View on Google Maps →</p>
+                    </div>
+                    <span
+                      class="absolute top-3 left-3 bg-white/20 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full"
+                    >
+                      Main Clinic
+                    </span>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="p-4">
+                    <h3
+                      class="font-bold text-gray-800 text-base mb-1 group-hover:text-primary transition-colors"
+                    >
+                      Dr. Pritam Titar Heart Clinic
+                    </h3>
+                    <p class="text-gray-500 text-xs mb-3">
+                      2nd floor, Crown World, Muktewadi
+                    </p>
+
+                    <!-- Services Tags -->
+                    <div class="mb-3">
+                      <div class="flex flex-wrap gap-1">
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded group-hover:bg-primary/5 transition-colors"
+                          >ECG</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded group-hover:bg-primary/5 transition-colors"
+                          >2D Echo</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded group-hover:bg-primary/5 transition-colors"
+                          >TMT</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded group-hover:bg-primary/5 transition-colors"
+                          >OPD</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Details -->
+                    <div class="space-y-2 text-sm">
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-clock text-primary text-xs w-4"></i>
+                        <span class="ml-2">Daily OPD (2 hours)</span>
+                      </div>
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-phone text-primary text-xs w-4"></i>
+                        <span class="ml-2">70301 08911</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Card 2: Indrayani Hospital -->
+              <div class="w-72 flex-shrink-0 px-2">
+                <div
+                  class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full cursor-not-allowed"
+                >
+                  <div
+                    class="relative h-32 bg-gradient-to-r from-[#FF6B6B] to-[#FF8E53] rounded-t-lg overflow-hidden"
+                  >
+                    <div
+                      class="absolute inset-0 flex flex-col items-center justify-center text-white"
+                    >
+                      <i class="fas fa-hospital text-xl mb-2"></i>
+                      <h3 class="font-semibold text-sm">Alandi</h3>
+                      <p class="text-xs opacity-80">Hospital View</p>
+                    </div>
+                    <span
+                      class="absolute top-3 left-3 bg-white/20 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full"
+                    >
+                      Specialized
+                    </span>
+                  </div>
+
+                  <div class="p-4">
+                    <h3 class="font-bold text-gray-800 text-base mb-1">
+                      Indrayani Hospital
+                    </h3>
+                    <p class="text-gray-500 text-xs mb-3">
+                      Cancer Research Centre, Alandi
+                    </p>
+
+                    <div class="mb-3">
+                      <div class="flex flex-wrap gap-1">
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Cath Lab</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Angio</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Heart Failure</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Cardio-Oncology</span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="space-y-2 text-sm">
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-clock text-primary text-xs w-4"></i>
+                        <span class="ml-2">Weekly OPD</span>
+                      </div>
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-phone text-primary text-xs w-4"></i>
+                        <span class="ml-2">70301 08911</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-3 pt-3 border-t border-gray-100">
+                      <p class="text-xs text-gray-500 italic">
+                        First Cardio-Oncology OPD in Maharashtra
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3: Unicare Hospital -->
+              <div class="w-72 flex-shrink-0 px-2">
+                <div
+                  class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full cursor-not-allowed"
+                >
+                  <div
+                    class="relative h-32 bg-gradient-to-r from-[#4ECDC4] to-[#44A08D] rounded-t-lg overflow-hidden"
+                  >
+                    <div
+                      class="absolute inset-0 flex flex-col items-center justify-center text-white"
+                    >
+                      <i class="fas fa-heartbeat text-xl mb-2"></i>
+                      <h3 class="font-semibold text-sm">Chakan</h3>
+                      <p class="text-xs opacity-80">Hospital</p>
+                    </div>
+                  </div>
+
+                  <div class="p-4">
+                    <h3 class="font-bold text-gray-800 text-base mb-1">
+                      Unicare Hospital
+                    </h3>
+                    <p class="text-gray-500 text-xs mb-3">Chakan, Pune</p>
+
+                    <div class="mb-3">
+                      <div class="flex flex-wrap gap-1">
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Cath Lab</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Angiography</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Angioplasty</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Heart Failure</span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="space-y-2 text-sm">
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-clock text-primary text-xs w-4"></i>
+                        <span class="ml-2">Wed/Sat OPD</span>
+                      </div>
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-phone text-primary text-xs w-4"></i>
+                        <span class="ml-2">70301 08911</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4: Chetana Hospital -->
+              <div class="w-72 flex-shrink-0 px-2">
+                <div
+                  class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full cursor-not-allowed"
+                >
+                  <div
+                    class="relative h-32 bg-gradient-to-r from-[#9D50BB] to-[#6E48AA] rounded-t-lg overflow-hidden"
+                  >
+                    <div
+                      class="absolute inset-0 flex flex-col items-center justify-center text-white"
+                    >
+                      <i class="fas fa-stethoscope text-xl mb-2"></i>
+                      <h3 class="font-semibold text-sm">Chinchwad</h3>
+                      <p class="text-xs opacity-80">Cardiac Centre</p>
+                    </div>
+                  </div>
+
+                  <div class="p-4">
+                    <h3 class="font-bold text-gray-800 text-base mb-1">
+                      Chetana Hospital
+                    </h3>
+                    <p class="text-gray-500 text-xs mb-3">
+                      Cardiac Centre, Chinchwad
+                    </p>
+
+                    <div class="mb-3">
+                      <div class="flex flex-wrap gap-1">
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Cath Lab</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Angiography</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Angioplasty</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Emergency</span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="space-y-2 text-sm">
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-clock text-primary text-xs w-4"></i>
+                        <span class="ml-2">Weekly OPD</span>
+                      </div>
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-phone text-primary text-xs w-4"></i>
+                        <span class="ml-2">70301 08911</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-3 pt-3 border-t border-gray-100">
+                      <p class="text-xs text-gray-500 italic">
+                        Emergency Cardiac Support
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5: Vitthal Hospital -->
+              <div class="w-72 flex-shrink-0 px-2">
+                <div
+                  class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full cursor-not-allowed"
+                >
+                  <div
+                    class="relative h-32 bg-gradient-to-r from-[#FF9A9E] to-[#FAD0C4] rounded-t-lg overflow-hidden"
+                  >
+                    <div
+                      class="absolute inset-0 flex flex-col items-center justify-center text-gray-800"
+                    >
+                      <i class="fas fa-clinic-medical text-xl mb-2"></i>
+                      <h3 class="font-semibold text-sm">Moshi</h3>
+                      <p class="text-xs opacity-80">Hospital</p>
+                    </div>
+                  </div>
+
+                  <div class="p-4">
+                    <h3 class="font-bold text-gray-800 text-base mb-1">
+                      Vitthal Hospital
+                    </h3>
+                    <p class="text-gray-500 text-xs mb-3">Moshi, Pune</p>
+
+                    <div class="mb-3">
+                      <div class="flex flex-wrap gap-1">
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Consultation</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >ECG</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Echo</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Emergency</span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="space-y-2 text-sm">
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-clock text-primary text-xs w-4"></i>
+                        <span class="ml-2">Weekly OPD</span>
+                      </div>
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-phone text-primary text-xs w-4"></i>
+                        <span class="ml-2">70301 08911</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6: Institute of Cardiac Health -->
+              <div class="w-72 flex-shrink-0 px-2">
+                <div
+                  class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full cursor-not-allowed"
+                >
+                  <div
+                    class="relative h-32 bg-gradient-to-r from-[#A8E6CF] to-[#7BC6CC] rounded-t-lg overflow-hidden"
+                  >
+                    <div
+                      class="absolute inset-0 flex flex-col items-center justify-center text-gray-800"
+                    >
+                      <i class="fas fa-heart text-xl mb-2"></i>
+                      <h3 class="font-semibold text-sm">Alephata</h3>
+                      <p class="text-xs opacity-80">Cardiac Institute</p>
+                    </div>
+                  </div>
+
+                  <div class="p-4">
+                    <h3 class="font-bold text-gray-800 text-base mb-1">
+                      Institute of Cardiac Health
+                    </h3>
+                    <p class="text-gray-500 text-xs mb-3">
+                      Alephata, Pune District
+                    </p>
+
+                    <div class="mb-3">
+                      <div class="flex flex-wrap gap-1">
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Consultation</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Preventive</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >ECG/Echo</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded"
+                          >Education</span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="space-y-2 text-sm">
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-clock text-primary text-xs w-4"></i>
+                        <span class="ml-2">Tue/Fri Visits</span>
+                      </div>
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-phone text-primary text-xs w-4"></i>
+                        <span class="ml-2">70301 08911</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-3 pt-3 border-t border-gray-100">
+                      <p class="text-xs text-gray-500 italic">
+                        Preventive Cardiology Focus
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 7: Mauli Diagnostic Centre -->
+              <div class="w-72 flex-shrink-0 px-2">
+                <a
+                  href="https://share.google/b75KYu7R5BZjxMML8"
+                  target="_blank"
+                  class="block bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary/30 h-full group cursor-pointer"
+                >
+                  <div
+                    class="relative h-32 bg-gradient-to-r from-[#141E46] to-[#6E48AA] rounded-t-lg overflow-hidden"
+                  >
+                    <div
+                      class="absolute inset-0 flex flex-col items-center justify-center text-white group-hover:scale-105 transition-transform"
+                    >
+                      <i
+                        class="fas fa-map-marker-alt text-xl mb-2 group-hover:scale-110 transition-transform"
+                      ></i>
+                      <h3 class="font-semibold text-sm">Moshi Road</h3>
+                      <p class="text-xs opacity-80">View on Google Maps →</p>
+                    </div>
+                  </div>
+
+                  <div class="p-4">
+                    <h3
+                      class="font-bold text-gray-800 text-base mb-1 group-hover:text-primary transition-colors"
+                    >
+                      Dr. Pritam Titar Heart Specialist
+                    </h3>
+                    <p class="text-gray-500 text-xs mb-3">
+                      Mauli Diagnostic Centre, Moshi Road
+                    </p>
+
+                    <div class="mb-3">
+                      <div class="flex flex-wrap gap-1">
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded group-hover:bg-primary/5 transition-colors"
+                          >Consultation</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded group-hover:bg-primary/5 transition-colors"
+                          >ECG</span
+                        >
+                        <span
+                          class="bg-gray-50 text-gray-700 text-xs px-2 py-1 rounded group-hover:bg-primary/5 transition-colors"
+                          >Echo</span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="space-y-2 text-sm">
+                      <div class="flex items-center text-gray-600">
+                        <i class="fas fa-phone text-primary text-xs w-4"></i>
+                        <span class="ml-2">70301 08911</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-3 pt-3 border-t border-gray-100">
+                      <p class="text-xs text-gray-500 italic">
+                        Convenient Moshi Road Location
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dots Indicator -->
+          <div class="flex justify-center mt-6 space-x-1" id="carousel-dots">
+            <!-- Dots will be generated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Unified Contact CTA -->
+        <!-- <div class="mt-8 text-center">
+            <div class="inline-flex items-center bg-gradient-to-r from-[#141E46] to-[#A0153E] text-white px-6 py-2 rounded-full shadow-md hover:shadow-lg transition-all">
+                <i class="fas fa-phone mr-2 text-sm"></i>
+                <span class="font-semibold">For Appointments: </span>
+                <a href="tel:7030108911" class="ml-2 font-bold hover:text-gray-200 transition-colors">70301 08911</a>
+            </div>
+            <p class="text-gray-500 text-xs mt-2">Same contact number for all locations</p>
+        </div> -->
+      </div>
+    </section>
     <!-- Emergency Contact -->
     <!-- <section class="py-16 bg-red-50">
         <div class="container mx-auto px-4">
@@ -211,9 +801,9 @@
                 <h2 class="text-4xl font-heading font-bold text-dark mb-6">Find Our Location</h2>
                 <p class="text-gray-600">Visit us at our medical center for quality healthcare services</p>
             </div> -->
-            
-            <!-- Placeholder for Map -->
-            <!-- <div class="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
+
+    <!-- Placeholder for Map -->
+    <!-- <div class="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
                 <div class="text-center">
                     <i class="fas fa-map-marker-alt text-6xl text-primary mb-4"></i>
                     <h3 class="text-xl font-semibold text-dark mb-2">Medical Center Location</h3>
@@ -226,120 +816,477 @@
         </div>
     </section> -->
 
-    <!-- Footer -->
-    <footer class="bg-[#141E46]  text-white py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-heading font-bold text-[#FF6969] mb-6">Dr. Pritam Titar</h3>
-                    <p class="text-gray-300 mb-6">
-                        Providing exceptional healthcare services with compassion, expertise, and dedication to patient
-                        well-being.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/people/DrPritam-Titar-Cardiologist/100076239281917/?mibextid=ZbWKwL"
-                            target="_blank" class="text-white hover:text-[#FF6969] transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/dr-pritam-titar-54199449/" target="_blank"
-                            class="text-white hover:text-[#FF6969] transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.instagram.com/pritamtitar/?igshid=ZDdkNTZiNTM%3D" target="_blank"
-                            class="text-white hover:text-[#FF6969] transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
+    <!-- WhatsApp Floating Button (Left Side) -->
+    <div
+      id="whatsapp-button"
+      class="fixed bottom-6 left-6 z-50 animate-bounce-once"
+    >
+      <a
+        href="https://wa.me/917030108911"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block w-14 h-14 rounded-full bg-[#25D366] shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+        aria-label="Chat with us on WhatsApp"
+      >
+        <div class="relative">
+          <!-- WhatsApp Icon -->
+          <i class="fab fa-whatsapp text-white text-2xl"></i>
 
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">Home</a>
-                        </li>
-                        <li><a href="about.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">About</a>
-                        </li>
-                        <li><a href="services.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Services</a></li>
-                        <li><a href="contact.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <a href="/services.html">
-                        <h4 class="text-lg font-semibold mb-6 hover:text-[#FF6969] transition">Services</h4>
-                    </a>
-                    <ul class="space-y-3">
-                        <li><a href="/services.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Angiography</a></li>
-                        <li><a href="/services.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Angioplasty</a></li>
-                        <li><a href="/services.html"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">Cardiac
-                                Rehabilitation</a></li>
-                        <li><a href="/services.html" class="text-gray-300 hover:text-[#FF6969] transition-colors">Heart
-                                Valve Surgery</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
-                    <div class="space-y-3">
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-phone text-[#FF6969]"></i>
-                            <a href="tel:+919876543210" class="text-gray-300 hover:text-[#FF6969] transition-colors">
-                                +91 98765 43210
-                            </a>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-envelope text-[#FF6969]"></i>
-                            <a href="mailto:dr.pritamtitar@email.com"
-                                class="text-gray-300 hover:text-[#FF6969] transition-colors">
-                                dr.pritamtitar@email.com
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
-                <p class="text-gray-300">
-                    &copy; 2025 Dr. Pritam Titar. All rights reserved. Developed by
-                    <a href="https://github.com/Shreyakamble08" target="_blank" class="text-[#FF6969]  hover:underline">
-                        Shreya Kamble
-                    </a>
-                </p>
-
-            </div>
+          <!-- Notification Badge (optional) -->
+          <!-- <span class="absolute -top-2 -right-2 w-6 h-6 bg-red-500 text-white text-xs rounded-full flex items-center justify-center animate-pulse">
+                <i class="fas fa-comment"></i>
+            </span> -->
         </div>
+
+        <!-- Tooltip on hover (positioned to the right) -->
+        <div
+          class="absolute left-16 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none"
+        >
+          Chat with us
+          <div
+            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2"
+          >
+            <div class="w-2 h-2 bg-gray-900 rotate-45"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-br from-primary to-[#A0153E] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center z-50 opacity-0 translate-y-20"
+    >
+      <i class="fas fa-arrow-up text-lg"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-[#141E46] text-white py-14">
+      <div class="container mx-auto px-4">
+        <!-- Footer Grid -->
+        <div class="grid md:grid-cols-4 gap-x-4 gap-y-10">
+          <!-- About -->
+          <div>
+            <h3 class="text-2xl font-heading font-bold text-[#FF6969] mb-5">
+              Dr. Pritam Titar
+            </h3>
+            <p class="text-gray-300 leading-relaxed">
+              Providing exceptional healthcare services with compassion,
+              expertise, and dedication to patient well-being.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="/services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Angiography
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Angioplasty
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Cardiac Rehabilitation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services.html"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  Heart Valve Surgery
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contact</h4>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <i class="fas fa-phone text-[#FF6969]"></i>
+                <a
+                  href="tel:+917030108911"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  +91 70301 08911
+                </a>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fas fa-envelope text-[#FF6969]"></i>
+                <a
+                  href="mailto:pritamtitar@gmail.com"
+                  class="text-gray-300 hover:text-[#FF6969] transition"
+                >
+                  pritamtitar@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+          <p class="text-gray-300 text-sm">
+            © 2026 Dr. Pritam Titar. All rights reserved.
+            <span class="block sm:inline">
+              Developed by
+              <a
+                href="https://kunashmedia.com/"
+                target="_blank"
+                class="text-[#FF6969] hover:underline"
+              >
+                Kunash Media
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
 
-        // Form submission
-        document.getElementById('appointment-form').addEventListener('submit', function(e) {
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+          if (mobileMenu.classList.contains("hidden")) {
+            menuIcon.classList.remove("fa-times");
+            menuIcon.classList.add("fa-bars");
+          } else {
+            menuIcon.classList.remove("fa-bars");
+            menuIcon.classList.add("fa-times");
+          }
+        });
+      }
+
+      // Form submission
+      if (document.getElementById("appointment-form")) {
+        document
+          .getElementById("appointment-form")
+          .addEventListener("submit", function (e) {
             e.preventDefault();
-            
-            // Show success message
-            alert('Thank you for booking an appointment! We will contact you shortly to confirm your appointment details.');
-            
-            // Reset form
+            alert(
+              "Thank you for booking an appointment! We will contact you shortly to confirm your appointment details."
+            );
             this.reset();
+          });
+      }
+
+      // Set minimum date to today
+      const dateInput = document.querySelector('input[type="date"]');
+      if (dateInput) {
+        const today = new Date().toISOString().split("T")[0];
+        dateInput.setAttribute("min", today);
+      }
+
+      // UPDATED CAROUSEL SCRIPT (Only this section is modified)
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("Initializing carousel...");
+
+        const track = document.getElementById("carousel-track");
+        const prevBtn = document.getElementById("prev-btn");
+        const nextBtn = document.getElementById("next-btn");
+        const dotsContainer = document.getElementById("carousel-dots");
+
+        if (!track || !prevBtn || !nextBtn) {
+          console.log("Carousel elements not found");
+          return;
+        }
+
+        // Fix: Set the track width properly
+        const cards = track.querySelectorAll(".flex-shrink-0");
+        const totalCards = cards.length;
+        let currentSlide = 0;
+        let autoSlideInterval;
+
+        console.log(`Found ${totalCards} cards`);
+
+        // Function to calculate how many cards are visible
+        function getCardsPerView() {
+          if (window.innerWidth >= 1280) return 4; // xl screens
+          if (window.innerWidth >= 1024) return 3; // lg screens
+          if (window.innerWidth >= 768) return 2; // md screens
+          return 1; // sm screens
+        }
+
+        // Function to move carousel
+        function moveCarousel() {
+          const cardsPerView = getCardsPerView();
+          const maxSlide = Math.max(totalCards - cardsPerView, 0);
+
+          // Don't go beyond max slide
+          if (currentSlide > maxSlide) {
+            currentSlide = maxSlide;
+          }
+
+          // Calculate movement percentage - FIXED: Use proper percentage calculation
+          const cardWidthPercentage = 100 / cardsPerView;
+          const movePercentage = cardWidthPercentage * currentSlide;
+          track.style.transform = `translateX(-${movePercentage}%)`;
+
+          console.log(
+            `Moving to slide ${currentSlide}, percentage: ${movePercentage}%, cards per view: ${cardsPerView}`
+          );
+
+          // Update dots
+          updateDots();
+
+          // Update buttons
+          updateButtons();
+        }
+
+        // Function to update dots - UPDATED: Max 3 dots
+        function updateDots() {
+          if (!dotsContainer) return;
+
+          const cardsPerView = getCardsPerView();
+          const maxSlide = Math.max(totalCards - cardsPerView, 0);
+          const totalSlides = maxSlide + 1;
+
+          // Only show up to 3 dots
+          const dotsToShow = Math.min(totalSlides, 3);
+
+          // Clear dots
+          dotsContainer.innerHTML = "";
+
+          // Create dots (max 3)
+          for (let i = 0; i < dotsToShow; i++) {
+            const dot = document.createElement("button");
+            dot.className = `w-2 h-2 rounded-full ${
+              i === Math.min(currentSlide, dotsToShow - 1)
+                ? "bg-primary"
+                : "bg-gray-300"
+            }`;
+
+            // Calculate which slide to go to when dot is clicked
+            dot.addEventListener("click", () => {
+              // For more than 3 slides, map dots to appropriate positions
+              if (totalSlides > 3) {
+                // First dot: go to first slide
+                if (i === 0) {
+                  currentSlide = 0;
+                }
+                // Last dot: go to last slide
+                else if (i === dotsToShow - 1) {
+                  currentSlide = maxSlide;
+                }
+                // Middle dot: go to middle position
+                else {
+                  currentSlide = Math.floor(maxSlide / 2);
+                }
+              } else {
+                // For 3 or fewer slides, direct mapping
+                currentSlide = i;
+              }
+
+              moveCarousel();
+              restartAutoSlide();
+            });
+            dotsContainer.appendChild(dot);
+          }
+        }
+
+        // Function to update buttons
+        function updateButtons() {
+          const cardsPerView = getCardsPerView();
+          const maxSlide = Math.max(totalCards - cardsPerView, 0);
+
+          // Previous button
+          if (currentSlide === 0) {
+            prevBtn.classList.add("opacity-50", "cursor-not-allowed");
+            prevBtn.disabled = true;
+          } else {
+            prevBtn.classList.remove("opacity-50", "cursor-not-allowed");
+            prevBtn.disabled = false;
+          }
+
+          // Next button
+          if (currentSlide >= maxSlide) {
+            nextBtn.classList.add("opacity-50", "cursor-not-allowed");
+            nextBtn.disabled = true;
+          } else {
+            nextBtn.classList.remove("opacity-50", "cursor-not-allowed");
+            nextBtn.disabled = false;
+          }
+        }
+
+        // Next slide function
+        function nextSlide() {
+          const cardsPerView = getCardsPerView();
+          const maxSlide = Math.max(totalCards - cardsPerView, 0);
+
+          if (currentSlide < maxSlide) {
+            currentSlide++;
+          } else {
+            currentSlide = 0; // Loop back to start
+          }
+          moveCarousel();
+        }
+
+        // Previous slide function
+        function prevSlide() {
+          const cardsPerView = getCardsPerView();
+          const maxSlide = Math.max(totalCards - cardsPerView, 0);
+
+          if (currentSlide > 0) {
+            currentSlide--;
+          } else {
+            currentSlide = maxSlide; // Loop to end
+          }
+          moveCarousel();
+        }
+
+        // Auto-slide functions
+        function startAutoSlide() {
+          clearInterval(autoSlideInterval);
+          autoSlideInterval = setInterval(() => {
+            nextSlide();
+          }, 4000);
+        }
+
+        function stopAutoSlide() {
+          clearInterval(autoSlideInterval);
+        }
+
+        function restartAutoSlide() {
+          stopAutoSlide();
+          startAutoSlide();
+        }
+
+        // Add event listeners to buttons
+        nextBtn.addEventListener("click", function (e) {
+          console.log("Next button clicked");
+          nextSlide();
+          restartAutoSlide();
         });
 
-        // Set minimum date to today
-        const dateInput = document.querySelector('input[type="date"]');
-        const today = new Date().toISOString().split('T')[0];
-        dateInput.setAttribute('min', today);
+        prevBtn.addEventListener("click", function (e) {
+          console.log("Previous button clicked");
+          prevSlide();
+          restartAutoSlide();
+        });
+
+        // Pause auto-slide on hover
+        const carouselContainer = document.querySelector(".relative"); // Select the carousel container
+        if (carouselContainer) {
+          carouselContainer.addEventListener("mouseenter", stopAutoSlide);
+          carouselContainer.addEventListener("mouseleave", startAutoSlide);
+        }
+
+        // Handle window resize
+        let resizeTimeout;
+        window.addEventListener("resize", function () {
+          clearTimeout(resizeTimeout);
+          resizeTimeout = setTimeout(() => {
+            moveCarousel();
+            updateButtons();
+          }, 150);
+        });
+
+        // Initialize carousel
+        function initCarousel() {
+          // Make sure track has transition
+          track.style.transition = "transform 0.3s ease-out";
+
+          // Set initial position
+          moveCarousel();
+
+          // Start auto-slide
+          setTimeout(() => {
+            startAutoSlide();
+          }, 1000);
+
+          console.log("Carousel initialized!");
+        }
+
+        // Initialize
+        initCarousel();
+      });
+
+      // Back to Top Button Functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopBtn = document.getElementById("backToTop");
+
+        if (backToTopBtn) {
+          // Show/hide button based on scroll position
+          window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 300) {
+              backToTopBtn.classList.remove("opacity-0", "translate-y-20");
+              backToTopBtn.classList.add("opacity-100", "translate-y-0");
+            } else {
+              backToTopBtn.classList.remove("opacity-100", "translate-y-0");
+              backToTopBtn.classList.add("opacity-0", "translate-y-20");
+            }
+          });
+
+          // Scroll to top when button is clicked
+          backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          });
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
