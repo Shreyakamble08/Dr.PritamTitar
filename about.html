@@ -122,55 +122,130 @@
     </div>
 
     <!-- Main Navbar -->
-   <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <div class="text-2xl font-heading font-bold text-[#141E46]">
-                        Dr. Pritam Titar
-                    </div>
-                </div>
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
-                    <a href="services.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
-                    <a href="contact.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
-                    <a href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar,%20I%20would%20like%20to%20book%20an%20appointment."
-                        target="_blank"
-                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium">
-                        Book Appointment
-                    </a>
-                </div>
+      <!-- LOGO -->
+      <div class="text-2xl font-heading font-bold text-[#141E46]">
+        Dr. Pritam Titar Heart Clinic
+      </div>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-dark focus:outline-none">
-                    <i id="menu-icon" class="fas fa-bars text-xl"></i>
-                </button>
+      <!-- DESKTOP MENU -->
+      <div class="hidden md:flex items-center space-x-8">
 
-            </div>
+        <a href="index.html" class="text-dark hover:text-primary font-medium">
+          Home
+        </a>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden pb-4">
-                <div class="flex flex-col space-y-4">
-                    <a href="index.html" class="text-dark hover:text-primary transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-dark hover:text-primary transition-colors font-medium">About</a>
-                    <a href="services.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Services</a>
-                    <a href="contact.html"
-                        class="text-dark hover:text-primary transition-colors font-medium">Contact</a>
-                    <a href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar,%20I%20would%20like%20to%20book%20an%20appointment."
-                        target="_blank"
-                        class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] hover:text-white transition-colors font-medium text-center">
-                        Book Appointment
-                    </a>
-                </div>
-            </div>
+        <a href="about.html" class="text-dark hover:text-primary font-medium">
+          About
+        </a>
+
+        <a href="services.html" class="text-dark hover:text-primary font-medium">
+          Services
+        </a>
+
+        <!-- CONTACT DROPDOWN -->
+        <div class="relative group">
+          <button
+            class="flex items-center gap-1 text-dark hover:text-primary font-medium"
+          >
+            Contact
+            <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- DROPDOWN MENU -->
+          <div
+            class="absolute left-0 mt-3 w-48 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+          >
+            <a
+              href="contact.html"
+              class="block px-5 py-3 text-sm text-slate-700 hover:bg-blue-50 hover:text-primary rounded-t-xl"
+            >
+              Contact Details
+            </a>
+            <a
+              href="chakan.html"
+              class="block px-5 py-3 text-sm text-slate-700 hover:bg-blue-50 hover:text-primary rounded-b-xl"
+            >
+              Clinic Location
+            </a>
+          </div>
         </div>
-    </nav>
+
+        <!-- CTA -->
+        <a
+          href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar,%20I%20would%20like%20to%20book%20an%20appointment."
+          target="_blank"
+          class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#141E46] transition font-medium"
+        >
+          Book Appointment
+        </a>
+      </div>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button id="mobile-menu-btn" class="md:hidden text-dark">
+        <i id="menu-icon" class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="md:hidden hidden pb-4">
+      <div class="flex flex-col space-y-4">
+
+        <a href="index.html" class="text-dark hover:text-primary font-medium">
+          Home
+        </a>
+
+        <a href="about.html" class="text-dark hover:text-primary font-medium">
+          About
+        </a>
+
+        <a href="services.html" class="text-dark hover:text-primary font-medium">
+          Services
+        </a>
+
+        <!-- MOBILE CONTACT DROPDOWN -->
+        <details class="group">
+          <summary
+            class="flex items-center justify-between cursor-pointer text-dark hover:text-primary font-medium"
+          >
+            Contact
+            <svg class="w-4 h-4 transition group-open:rotate-180" fill="none"
+              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+
+          <div class="ml-4 mt-3 flex flex-col space-y-2 text-sm">
+            <a href="contact.html" class="text-slate-700 hover:text-primary">
+              Contact Details
+            </a>
+            <a href="chakan.html" class="text-slate-700 hover:text-primary">
+              Clinic Location
+            </a>
+          </div>
+        </details>
+
+        <!-- CTA -->
+        <a
+          href="https://wa.me/917030108911?text=Hello%20Dr.%20Pritam%20Titar,%20I%20would%20like%20to%20book%20an%20appointment."
+          target="_blank"
+          class="bg-primary text-white px-6 py-2 rounded-full text-center hover:bg-[#141E46] transition font-medium"
+        >
+          Book Appointment
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
     <!-- Page Banner -->
     <!-- <section class="bg-gradient-to-r from-[#A0153E] via-[#C70039] to-[#FF6969] py-20">
@@ -191,7 +266,7 @@
       <!-- Image Column -->
       <div class="relative">
         <img
-          src="/Images/doctor.png"
+          src="/Images/aboutdoc.jpeg"
           alt="Dr. Pritam Titar"
           class="rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl w-full max-w-xs sm:max-w-sm md:max-w-md h-auto mx-auto border-4 border-white"
         />
